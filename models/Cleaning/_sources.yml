@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: sales_data
+    database: new_york_city_sales_raw
+    schema: sales_data
+    tables:
+      - name: sales_data_table
+        description: '{{ doc("raw_data_description") }}'
