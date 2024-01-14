@@ -30,8 +30,22 @@ cleaned_data as
     lot,
     coalesce(easement, 'No Easement') as easement,
     coalesce(building_class_at_present, 'Unknown') as building_class_at_present,
-    Address,
-    coalesce(apartment_number, 'Not Applicable') as apartment_number,
+
+
+    address,
+
+    {# The apartment numbers now encompass those found within the address field,
+       but were not originally placed in their respective column #}
+    case
+      when position(', ' in address) > 0 
+      then substring(address, position(', ' in address) + 2) 
+      else 
+        case 
+          when apartment_number is null 
+          then coalesce(apartment_number, 'Not Applicable')
+          else apartment_number
+          end
+    end as apartment_number,
  
    {# As there are no valid zero zip codes in the USA, they have been replaced with 'unknown', same with null #}
     case
@@ -49,11 +63,18 @@ cleaned_data as
 
    {# If the year was 0, it was configured as null, particularly for scenarios where 
    aggregations, including calculating minimum values, were required #}
-   cast (case
+    cast (case
           when year_built = '0'
           then null
           else year_built
          end as smallint) as year_built,
+    
+    {# Add a column indicating the decade of construction #}
+    case 
+      when year_built = '0'
+      then null 
+      else left(year_built, 3) || '0''s' 
+    end as decade_built,
 
     tax_class_at_time_of_sale,
     building_class_at_time_of_sale,
@@ -65,9 +86,12 @@ cleaned_data as
            else regexp_replace(regexp_replace(sales_price, ',', ''), '\\$', '') 
           end as integer ) as sales_price,
  
+    {# Divide the date into its constituent parts: day, month, year, and quarter #}
     sale_date,
+    extract(day from sale_date) as sale_day,
+    extract(month from sale_date) as sale_month,
+    extract(quarter from sale_date) as sale_quarter,
     sale_year
-
 
     from raw_data
 

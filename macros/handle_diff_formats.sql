@@ -1,7 +1,16 @@
-{# It was noticed that in the 2018 format, these fields were null only when corresponding fields, 
-such as the building_class_at_present column, were null and they were set to 0 when a value was absent #}
+{# The 2018 format, being devoid of dashes, served as a benchmark. 
+Within this format, it was identified that fields pertaining to units and square feets were null 
+in instances where certain dimensions, like the building_class_column, were also null. 
+Nevertheless, there were occurrences where both residential and commercial units equated to zero, 
+while the total units did not. Moreover, there were situations where all units registered as zero, 
+yet the land square feets did not. In response to these variations, 
+a decision was reached to assign null values to all units and feet when fields like building_class were null. 
+This was deemed necessary when a pattern was noticed in the 2016 format 
+where, in the absence of data in that column, all units and square feets were represented as dashes; 
+and in the 2017 format, the units were zeros and square feets were dashes #}
 
 {# Additionally commas were removed from the fields to facilitate aggregations on the data #}
+
 
 {% macro transform_and_cast_column(column_name, building_class_column,column_type) %}
     case 
