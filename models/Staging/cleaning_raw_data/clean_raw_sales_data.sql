@@ -31,8 +31,8 @@ cleaned_data as
     coalesce(easement, 'No Easement') as easement,
     coalesce(building_class_at_present, 'Unknown') as building_class_at_present,
 
-
-    address,
+    {# Remove appartment numbers from addresses #}
+    split_part(address, ', ', 1) as address,
 
     {# The apartment numbers now encompass those found within the address field,
        but were not originally placed in their respective column #}

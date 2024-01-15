@@ -28,7 +28,7 @@ date_dim as
 {# Each row in this fact table signifies the sales of a building. 
    Address and apartment number have been included as degenerate dimensions 
    since they are descriptive fields. These fields are not utilized for grouping or filtering, 
-   and their inclusion in any dimension would only contribute to the increase of its size#}
+   and their inclusion in any dimension would only contribute to the increase of its size #}
 
 property_fact_table as
 (
