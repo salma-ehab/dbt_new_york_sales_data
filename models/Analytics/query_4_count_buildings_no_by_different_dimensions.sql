@@ -3,7 +3,7 @@
   and subsequently combining all the data through a union operation #}
 
 {# It was observed that at times, the zip code was unknown. 
-   To uniquely identify buildings, the approach involved selecting distinct combinations of borough name, 
+   To uniquely count buildings, the approach involved selecting distinct combinations of borough name, 
    neighborhood, block, and lot #}
 
 with 

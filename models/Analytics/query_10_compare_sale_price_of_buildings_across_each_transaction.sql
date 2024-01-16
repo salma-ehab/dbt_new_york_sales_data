@@ -4,13 +4,9 @@
    where the same location could be expressed differently,
    such as "street" or "st" and "3rd" or "3." #}
 
-{# It was observed that there can be multiple records for the same building due 
-   to the occasional absence of the zipcode. To uniquely identify buildings in such cases, 
-   distinct combinations of borough, neighborhood, block, and lot were selected. 
-   These distinct combinations were then grouped, and the resulting groups were joined with 
-   the location dimension to obtain the location key. 
-   This location key was then used to join with the sales fact table to 
-   analyze multiple transactions for each building #}
+{# It was noted that multiple records for the same building may exist due to occasional missing or 
+  incorrectly entered zip codes. To ensure the unique identification of buildings in such instances, 
+  distinctive combinations of borough, neighborhood, block, and lot were chosen #}
 
 {# At times, individual apartments were sold instead of the entire building. 
   Filtering was performed using the apartment number. However, instances were identified 
@@ -35,40 +31,24 @@ date_dim as
 ),
 
 
-distinct_building as
-(
-    select distinct
-
-    borough_name, neighborhood, block, lot
-    
-    from location_dim
-
-),
-
 buildings_sold_multiple_times as
 (
     select 
     
     count(*),
-    distinct_building.borough_name,
-    distinct_building.neighborhood,
-    distinct_building.block,
-    distinct_building.lot
+    location_dim.borough_name,
+    location_dim.neighborhood,
+    location_dim.block,
+    location_dim.lot
 
-    from distinct_building
-
-    inner join location_dim
-    on  distinct_building.borough_name = location_dim.borough_name
-    and distinct_building.neighborhood = location_dim.neighborhood
-    and distinct_building.block = location_dim.block
-    and distinct_building.lot = location_dim.lot
+    from location_dim
 
     inner join property_fact_table
     on property_fact_table.location_key = location_dim.location_key
 
     where property_fact_table.apartment_number = 'Not Applicable'
 
-    group by distinct_building.borough_name, distinct_building.neighborhood, distinct_building.block, distinct_building.lot
+    group by location_dim.borough_name, location_dim.neighborhood, location_dim.block, location_dim.lot
     having (count(*) > 1)
     order by count(*) desc
 ),
