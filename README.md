@@ -214,6 +214,22 @@ Multiple queries were run to conduct analyses on the data.
 ### Query 1:
 - This query is designed to compute the average sale price for each borough.
 
+### Query 2:
+- This query is designed to identify the neighborhood with the most total units.
+
+### Query 3:
+- This query aims to determine the building class category with the highest average land square feet.
+
+### Query 4:
+- This query involved tallying the number of buildings based on various dimensions. 
+
+- This entailed counting buildings in each neighborhood, borough, and block, 
+  and subsequently combining all the data through a union operation.
+
+- It was noted that multiple records for the same building may exist due to occasional missing or 
+  incorrectly entered zip codes. To ensure the unique identification of buildings in such instances, 
+  distinctive combinations of borough, neighborhood, block, and lot were chosen.
+
 ## Data Dictionary
 
 For additional information on data fields, please refer to the [data dictionary](https://www.nyc.gov/assets/finance/downloads/pdf/07pdf/glossary_rsf071607.pdf).

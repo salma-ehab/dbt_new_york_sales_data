@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: query_2_neighborhood_most_total_units
+    description: "This query is designed to identify the neighborhood with the most total units."
+
+    columns:
+          - name: neighborhood
+            description: "The neighborhood with the most total units."
+
+          - name: max_total_units
+            description: "All the total units within that neighborhood."

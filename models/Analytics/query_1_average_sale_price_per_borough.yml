@@ -6,10 +6,10 @@ models:
 
     columns:
           - name: borough_name
-            description: "The name of the borough in which the property is located."
+            description: "The borough's name."
 
           - name: borough_code
-            description: "The code of the borough in which the property is located."
+            description: "The borough's code."
 
           - name: avg_borough_sales_price
             description: "The average sale price for each borough."

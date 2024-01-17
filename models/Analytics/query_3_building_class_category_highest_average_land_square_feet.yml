@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: query_3_building_class_category_highest_average_land_square_feet
+    description: "This query aims to determine the building class category with the highest average land square feet."
+
+    columns:
+          - name: building_class_category
+            description: "The building class category with the highest average land square feet."
+
+          - name: avg_land_square_feet
+            description: "The average land square feet of that building class category."
