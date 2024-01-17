@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: property_specs_at_sale_dim
+    description: '{{ doc("property_specs_at_sale_dim_description") }}'
+
+    columns:
+          - name: building_class_category
+            description: '{{ doc("building_class_category_description") }}'
+
+          - name: building_class_at_time_of_sale
+            description: '{{ doc("building_class_description") }}'
+
+          - name: tax_class_at_time_of_sale
+            description: '{{ doc("tax_class_description") }}'
+
+          - name: easement
+            description: '{{ doc("easement_description") }}'
+
+          - name: year_built
+            description: "Year the structure on the property was built."
+
+          - name: decade_built
+            description: "Decade the structure on the property was built."
+
+          - name: property_specs_at_sale_key
+            description: "A unique identifier assigned to each combination of properties at the time of sale."

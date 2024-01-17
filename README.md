@@ -138,7 +138,7 @@ The star schema is composed of the following key elements:
 
 ### Location Dimension
 
-The location dimension includes attributes:
+This dimension includes attributes:
 - borough_name
 - borough_code 
 - neighborhood 
@@ -153,7 +153,17 @@ in future analyses.
 
 ### Property Specs at Sale Dimension
 
-[Include a brief description of this dimension.]
+This dimension encompasses building properties, excluding those pertaining to the present. The attributes encompassed are:
+- building_class_category
+- building_class_at_time_of_sale 
+- tax_class_at_time_of_sale
+- easement
+- year_built
+- decade_built
+-property_specs_at_sale_key
+
+It is crucial to maintain a separation between present and at sale properties as combining them 
+would inevitably result in a higher row count.
 
 ### Property Specs at Present Dimension
 

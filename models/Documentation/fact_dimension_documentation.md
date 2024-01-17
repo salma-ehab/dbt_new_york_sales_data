@@ -8,3 +8,12 @@ in future analyses. Although their usage may be infrequent, there is a possibili
 upcoming work.
 
 {% enddocs %}
+
+{% docs property_specs_at_sale_dim_description %}
+
+This dimension encompasses building properties, excluding those pertaining to the present.
+
+It is crucial to maintain a separation between present and at sale properties as combining them 
+would inevitably result in a higher row count.
+
+{% enddocs %}
