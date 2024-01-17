@@ -4,8 +4,6 @@ This project involves a multi-step process aimed at loading, transforming and an
 
 ## Table of Contents
 - [Loading Data through Snowflake](#loading-data-through-snowflake)
-  - [Databases Creation](#databases-creation)
-  - [Data Loading](#data-loading)
 - [Data Cleansing and Preparation](#data-cleansing-and-preparation)
   - [Column Details](#column-details)
   - [Observations in Data Formats](#observations-in-data-formats)
