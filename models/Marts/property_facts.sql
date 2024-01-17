@@ -25,8 +25,8 @@ date_dim as
     select * from {{ ref('date_dim') }}
 ),
 
-{# Each row in this fact table signifies the sales of a building. 
-   Address and apartment number have been included as degenerate dimensions 
+{# Each row in this fact table represents a sale transaction associated with a building.
+   Address and apartment number fields have been included as degenerate dimensions 
    since they are descriptive fields. These fields are not utilized for grouping or filtering, 
    and their inclusion in any dimension would only contribute to the increase of its size #}
 

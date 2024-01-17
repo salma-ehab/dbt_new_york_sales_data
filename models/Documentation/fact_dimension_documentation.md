@@ -27,3 +27,13 @@ sale occurrence. Thus, it is suitable to include them as dimensions associated w
 given that these values experience changes solely in correlation with each sale.
 
 {% enddocs %}
+
+{% docs property_facts_description %}
+
+Every row in this fact table signifies a sales transaction linked to a building. 
+
+The address and apartment number fields have been incorporated as degenerate dimensions, 
+serving as descriptive fields. These fields are not employed for grouping or filtering, 
+and adding them to any dimension would only lead to an increase in its size.
+
+{% enddocs %}

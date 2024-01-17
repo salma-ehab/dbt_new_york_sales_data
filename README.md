@@ -136,6 +136,26 @@ were represented as dashes. While in the 2017 format, units were zeros, and squa
 
 The star schema is composed of the following key elements:
 
+### Sales Fact Table
+
+Every row in this fact table signifies a sales transaction associated with a building. The attributes encompassed by this fact table are:
+- sales_price
+- residential_units 
+- commercial_units
+- total_units
+- land_square_feet
+- gross_square_feet
+- address
+- apartment_number
+- location_key
+- property_specs_at_sale_key
+- property_specs_at_present_key
+- date_key
+
+The address and apartment number fields have been incorporated as degenerate dimensions, 
+serving as descriptive fields. These fields are not employed for grouping or filtering, 
+and adding them to any dimension would only lead to an increase in its size.
+
 ### Location Dimension
 
 This dimension contains details related to location and comprises the following attributes:
@@ -186,10 +206,6 @@ This dimension contains all information related to sale dates and spans from '20
 - day_value
 - quarter_value
 - date_key
-
-### Fact Table
-
-The fact table forms the core of the schema, representing each row as a sale transaction associated with a building. This central element enables comprehensive analyses and enhances the overall efficiency of data queries.
 
 ## Analytics with dbt
 

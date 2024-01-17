@@ -1,0 +1,42 @@
+version: 2
+
+models:
+  - name: property_facts
+    description: '{{ doc("property_facts_description") }}'
+
+    columns:
+          - name: sales_price
+            description: '{{ doc("sales_price_description") }}'
+
+          - name: residential_units
+            description: "The number of residential units at the listed property."
+
+          - name: commercial_units
+            description: "The number of commercial units at the listed property."
+
+          - name: total_units
+            description: "The total number of units at the listed property."
+
+          - name: land_square_feet
+            description: "The land area of the property listed in square feet."
+
+          - name: gross_square_feet
+            description: '{{ doc("gross_square_feet_description") }}'
+
+          - name: address
+            description: '{{ doc("address_description") }}'
+
+          - name: apartment_number
+            description: "The apartment number of the property as listed on the Sales File."
+
+          - name: location_key
+            description: "A unique identifier for each location."
+
+          - name: property_specs_at_sale_key
+            description: "A unique identifier assigned to each combination of properties at the time of sale."
+
+          - name: property_specs_at_present_key
+            description: "A unique identifier assigned to each combination of present properties."
+
+          - name: date_key
+            description: "A unique identifier for each date."
