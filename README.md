@@ -2,7 +2,7 @@
 
 This project involves a multi-step process aimed at loading, transforming and analyzing data using Snowflake and dbt. The key stages include loading raw data, cleansing it, establishing a star schema, and executing queries.
 
-## Snowflake Setup
+## Loading Data through Snowflake
 
 **Databases Creation:**
 - Two databases were created within Snowflake—one for raw data and another for analytics.
