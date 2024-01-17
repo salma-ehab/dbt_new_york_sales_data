@@ -36,7 +36,7 @@ This project involves a multi-step process aimed at loading, transforming and an
   - Also, replaced any null values with a descriptive string 'Unknown'.
 
 - **tax_subclass_at_present**
-  - Added tax subclass at present field to encompass both the main class and its associated subclasses.
+  - Added tax subclass at present field to encompass both the main class and its associated subclass.
   - Also, replaced any null values with a descriptive string 'Unknown'.
 
 - **block**
@@ -132,9 +132,40 @@ to all units and feets when fields like building_class were null. This adjustmen
 recognizing a pattern in the 2016 format, where, in the absence of data in that column, all units and square feets 
 were represented as dashes. While in the 2017 format, units were zeros, and square feets were represented as dashes.
 
-## Star Schema Creation
+## Star Schema 
 
-The project involved designing and implementing a star schema to optimize analytics. This structured the data into a star-like format, enhancing query performance.
+The star schema is composed of the following key elements:
+
+### Location Dimension
+
+The location dimension includes attributes:
+- borough_name
+- borough_code 
+- neighborhood 
+- block
+- lot
+- zip_code
+- location_key
+
+While the addition of block, lot, and zip_code results in a greater number of rows within this dimension, 
+their incorporation was motivated by the recognition that these attributes might be utilized for grouping and filtering 
+in future analyses. 
+
+### Property Specs at Sale Dimension
+
+[Include a brief description of this dimension.]
+
+### Property Specs at Present Dimension
+
+[Include a brief description of this dimension.]
+
+### Date Dimension
+
+[Include a brief description of this dimension.]
+
+### Fact Table
+
+The fact table forms the core of the schema, representing each row as a sale transaction associated with a building. This central element enables comprehensive analyses and enhances the overall efficiency of data queries.
 
 ## Analytics with dbt
 

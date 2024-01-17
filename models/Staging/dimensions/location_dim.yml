@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: location_dim
+    description: '{{ doc("location_dim_description") }}'
+
+    columns:
+          - name: borough_name
+            description: "The name of the borough in which the property is located."
+
+          - name: borough_code
+            description: "The code of the borough in which the property is located."
+
+          - name: neighborhood
+            description: "The neighborhood in which the property is located."
+
+          - name: block
+            description: '{{ doc("block_description") }}'
+
+          - name: lot
+            description: "A Tax Lot is a subdivision of a Tax Block and represents the property unique location."
+
+          - name: zip_code
+            description: "The property’s postal code."
+
+          - name: location_key
+            description: "A unique identifier for each location."

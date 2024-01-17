@@ -8,7 +8,7 @@ Also, replaced any null values with a descriptive string 'Unknown'.
 
 {% docs cleaned_tax_subclass_at_present_description %}
 
-Added tax subclass at present field to encompass both the main class and its associated subclasses.
+Added tax subclass at present field to encompass both the main class and its associated subclass.
 
 Also, replaced any null values with a descriptive string 'Unknown'.
 
