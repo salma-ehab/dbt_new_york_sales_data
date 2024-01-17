@@ -66,3 +66,20 @@ The data was filtered to exclude cases where the year built was null, indicating
 and the sale price was zero, suggesting a transfer of ownership without a cash consideration.
 
 {% enddocs %}
+
+{% docs query_10_description %}
+
+This query serves the purpose of identifying the sales linked to a building, 
+particularly when the building has been involved in multiple sales transactions.
+
+The identification process focuses on factors such as borough, neighborhood, block, and lot, 
+rather than the address. This approach is taken due to variations in address representation, 
+where the same location might be expressed differently (e.g., "street" or "st" and "3rd" or "3").
+
+It has been observed that multiple records for the same building may exist, 
+primarily due to occasional missing or incorrectly entered zip codes. To ensure the unique identification of 
+buildings in such instances, distinctive combinations of borough, neighborhood, block, and lot were 
+grouped together, disregarding the zip code and location key. Thus, buildings sold multiple times 
+had to be reconnected with the location dimension to retrieve the location key.
+
+{% enddocs %}

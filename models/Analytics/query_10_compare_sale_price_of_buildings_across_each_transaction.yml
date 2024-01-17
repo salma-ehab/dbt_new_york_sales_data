@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: query_10_compare_sale_price_of_buildings_across_each_transaction
+    description: '{{ doc("query_10_description") }}'
+
+    columns:
+          - name: borough_name
+            description: "The borough's name."
+
+          - name: neighborhood
+            description: "The neighborhood's name."
+
+          - name: block
+            description: "The block's number."
+
+          - name: lot
+            description: "The lot's number."
+
+          - name: sales_price
+            description: "The sale price pertaining to the building."
+
+          - name: date_value
+            description: "The date on which the sale occurred."
