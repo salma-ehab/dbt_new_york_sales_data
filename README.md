@@ -2,6 +2,34 @@
 
 This project involves a multi-step process aimed at loading, transforming and analyzing data using Snowflake and dbt. The key stages include loading raw data, cleansing it, establishing a star schema, and executing queries.
 
+## Table of Contents
+- [Loading Data through Snowflake](#loading-data-through-snowflake)
+  - [Databases Creation](#databases-creation)
+  - [Data Loading](#data-loading)
+- [Data Cleansing and Preparation](#data-cleansing-and-preparation)
+  - [Column Details](#column-details)
+  - [Observations in Data Formats](#observations-in-data-formats)
+- [Star Schema](#star-schema)
+  - [Sales Fact Table](#sales-fact-table)
+  - [Location Dimension](#location-dimension)
+  - [Property Specs at Sale Dimension](#property-specs-at-sale-dimension)
+  - [Property Specs at Present Dimension](#property-specs-at-present-dimension)
+  - [Date Dimension](#date-dimension)
+- [Analytics](#analytics)
+  - [Query 1](#query-1)
+  - [Query 2](#query-2)
+  - [Query 3](#query-3)
+  - [Query 4](#query-4)
+  - [Query 5](#query-5)
+  - [Query 6](#query-6)
+  - [Query 7](#query-7)
+  - [Query 8](#query-8)
+  - [Query 9](#query-9)
+  - [Query 10](#query-10)
+  - [Query 11](#query-11)
+- [Project File Structure](#project-file-structure)
+- [Data Dictionary](#data-dictionary)
+
 ## Loading Data through Snowflake
 
 **Databases Creation:**
@@ -310,7 +338,7 @@ The project files are organized as follows:
 - **Analytics Folder:**
   - Contains queries.
   - Located within the Models folder.
-  
+
 ## Data Dictionary
 
 For additional information on data fields, please refer to the [data dictionary](https://www.nyc.gov/assets/finance/downloads/pdf/07pdf/glossary_rsf071607.pdf).
