@@ -83,3 +83,16 @@ grouped together, disregarding the zip code and location key. Thus, buildings so
 had to be reconnected with the location dimension to retrieve the location key.
 
 {% enddocs %}
+
+{% docs query_11_description %}
+
+This query is aimed at analyzing sale prices based on the year built and the decade built. 
+The process involves grouping the data by year and decade and then analyzing the distribution of sale prices.
+
+The analysis included obtaining the maximum, minimum, average, median, and 
+standard deviation for each group.
+
+The data was filtered to exclude cases where the year built was null, indicating missing data, 
+and the sale price was zero, suggesting a transfer of ownership without a cash consideration.
+
+{% enddocs %}

@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: query_11_analyze_relationship_between_building_cat_age_and_sale_price_based_on_year_built
+    description: '{{ doc("query_11_description") }}'
+
+    columns:
+          - name: year_built
+            description: "Year the structure on the property was built."
+
+          - name: decade_built
+            description: "Decade the structure on the property was built."
+
+          - name: max_sales_price
+            description: "The maximum sale price pertaining to the year and decade."
+
+          - name: min_sales_price
+            description: "The minimum sale price pertaining to the year and decade."
+
+          - name: avg_sales_price
+            description: "The average sale price pertaining to the year and decade."
+
+          - name: median_sales_price
+            description: "The median sale price pertaining to the year and decade."
+
+          - name: std_dev_sales_price
+            description: "The standard deviation of the sale prices pertaining to the year and decade."
