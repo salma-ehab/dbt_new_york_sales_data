@@ -15,4 +15,4 @@ models:
             description: "The month's value."
 
           - name: total_sales_price
-            description: "The total cumulative sales prices."
+            description: "The total sales prices for the respective date values."

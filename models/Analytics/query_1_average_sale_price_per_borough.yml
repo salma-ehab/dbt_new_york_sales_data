@@ -12,4 +12,4 @@ models:
             description: "The borough's code."
 
           - name: avg_borough_sales_price
-            description: "The average sale price for each borough."
+            description: "The average sale price pertaining to the borough."

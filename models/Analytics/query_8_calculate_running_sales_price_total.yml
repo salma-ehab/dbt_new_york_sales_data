@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: query_8_calculate_running_sales_price_total
+    description: '{{ doc("query_8_description") }}'
+
+    columns:
+          - name: year_value
+            description: "The year's value."
+
+          - name: month_value
+            description: "The month's value."
+
+          - name: running_total_sales_price
+            description: "The cumulative sales price for the respective year and month."

@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: query_7_top_5_most_expensive_buildings_based_on_sale_price
+    description: '{{ doc("query_7_description") }}'
+
+    columns:
+          - name: borough_name
+            description: "The borough's name."
+
+          - name: neighborhood
+            description: "The neighborhood's name."
+
+          - name: block
+            description: "The block's number."
+
+          - name: lot
+            description: "The lot's number."
+
+          - name: sale_price
+            description: "The sale price pertaining to the building."

@@ -231,7 +231,7 @@ Multiple queries were run to conduct analyses on the data.
   distinctive combinations of borough, neighborhood, block, and lot were chosen.
 
 ### Query 5:
-- This query entailed calculating cumulative sales figures across different date intervals.
+- This query entailed calculating total sales figures across different date intervals.
 
 - The analysis was conducted on a yearly, monthly, and quarterly basis, avoiding daily breakdowns to 
   enhance result readability. Subsequently, the data was consolidated using a union operation.
@@ -241,6 +241,24 @@ Multiple queries were run to conduct analyses on the data.
   followed by comparing the average sale prices for each combination, determining whether they were greater, lesser, or equal. 
 
 - The unknown class category was excluded due to its status as a missing data value.
+
+### Query 7:
+- This query is designed to identify the top 5 most expensive buildings based on sale price.
+
+- The identification process focuses on factors such as borough, neighborhood, block, and lot, 
+  rather than the address. This approach is taken due to variations in address representation, 
+  where the same location might be expressed differently (e.g., "street" or "st" and "3rd" or "3").
+
+- It has been observed that multiple records for the same building may exist, 
+  primarily due to occasional missing or incorrectly entered zip codes. To ensure the unique identification of 
+  buildings in such instances, distinctive combinations of borough, neighborhood, block, and lot were 
+  grouped together, disregarding the zip code.
+
+### Query 8:
+- This query involved utilizing a window function to calculate the running total of sales prices.
+
+- The computation was executed on a yearly and monthly basis, with a deliberate decision to 
+  avoid daily breakdowns for enhanced result clarity.
 
 ## Data Dictionary
 
