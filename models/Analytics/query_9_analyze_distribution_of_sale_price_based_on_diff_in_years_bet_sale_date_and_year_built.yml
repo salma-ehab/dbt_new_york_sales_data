@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: query_9_analyze_distribution_of_sale_price_based_on_diff_in_years_bet_sale_date_and_year_built
+    description: '{{ doc("query_9_description") }}'
+
+    columns:
+          - name: diff_in_years
+            description: "The difference in years."
+
+          - name: max_sales_price
+            description: "The maximum sale price pertaining to the difference in years."
+
+          - name: min_sales_price
+            description: "The minimum sale price pertaining to the difference in years."
+
+          - name: avg_sales_price
+            description: "The average sale price pertaining to the difference in years."
+
+          - name: median_sales_price
+            description: "The median sale price pertaining to the difference in years."
+
+          - name: std_dev_sales_price
+            description: "The standard deviation of the sale prices pertaining to the difference in years."

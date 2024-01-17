@@ -52,3 +52,17 @@ The computation was executed on a yearly and monthly basis, with a deliberate de
 avoid daily breakdowns for enhanced result clarity.
 
 {% enddocs %}
+
+{% docs query_9_description %}
+
+This query involved grouping the data based on a column representing the difference in 
+years between the sale date and the year built, and subsequently 
+analyzing the distribution of sale prices.
+
+The analysis included obtaining the maximum, minimum, average, median, and 
+standard deviation for each group based on the year difference column.
+
+The data was filtered to exclude cases where the year built was null, indicating missing data, 
+and the sale price was zero, suggesting a transfer of ownership without a cash consideration.
+
+{% enddocs %}

@@ -260,6 +260,17 @@ Multiple queries were run to conduct analyses on the data.
 - The computation was executed on a yearly and monthly basis, with a deliberate decision to 
   avoid daily breakdowns for enhanced result clarity.
 
+### Query 9:
+- This query involved grouping the data based on a column representing the difference in 
+  years between the sale date and the year built, and subsequently 
+  analyzing the distribution of sale prices.
+
+- The analysis included obtaining the maximum, minimum, average, median, and 
+  standard deviation for each group based on the year difference column.
+
+- The data was filtered to exclude cases where the year built was null, indicating missing data, 
+  and the sale price was zero, suggesting a transfer of ownership without a cash consideration.
+
 ## Data Dictionary
 
 For additional information on data fields, please refer to the [data dictionary](https://www.nyc.gov/assets/finance/downloads/pdf/07pdf/glossary_rsf071607.pdf).
