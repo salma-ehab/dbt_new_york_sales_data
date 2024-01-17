@@ -87,7 +87,7 @@ models:
             description:  "This filed was extracted from the sale_date field."
 
           - name: sale_year
-            description:  "Cleaning wasn't necessary for that field since the source year of the data aligns with the year value indicated in the sale_date field."
+            description:  "Cleansing wasn't necessary for that field since the source year of the data aligns with the year value indicated in the sale_date field."
 
 
 
