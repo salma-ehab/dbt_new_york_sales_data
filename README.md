@@ -207,11 +207,12 @@ This dimension contains all information related to sale dates and spans from '20
 - quarter_value
 - date_key
 
-## Analytics with dbt
+## Analytics 
 
-The project concluded with the execution of multiple queries using dbt (data build tool). dbt transformed the prepared data, providing valuable insights.
+Multiple queries were run to conduct analyses on the data.
 
-This README provides an overview of the comprehensive approach to handling data—from loading raw information into Snowflake to executing refined queries using dbt.
+### Query 1:
+- This query is designed to compute the average sale price for each borough.
 
 ## Data Dictionary
 

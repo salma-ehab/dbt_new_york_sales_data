@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: query_1_average_sale_price_per_borough
+    description: "This query is designed to compute the average sale price for each borough."
+
+    columns:
+          - name: borough_name
+            description: "The name of the borough in which the property is located."
+
+          - name: borough_code
+            description: "The code of the borough in which the property is located."
+
+          - name: avg_borough_sales_price
+            description: "The average sale price for each borough."
