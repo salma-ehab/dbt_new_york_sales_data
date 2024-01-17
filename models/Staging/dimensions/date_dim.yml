@@ -2,7 +2,7 @@ version: 2
 
 models:
   - name: date_dim
-    description: "The date dimension encompasses all information related to sale dates and spans from '2016-01-01' to '2019-01-01.'"
+    description: "The date dimension encompasses all information related to sale dates and spans from '2016-01-01' to '2019-01-01'."
 
     columns:
           - name: date_value

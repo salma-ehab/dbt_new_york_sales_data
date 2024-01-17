@@ -138,7 +138,7 @@ The star schema is composed of the following key elements:
 
 ### Location Dimension
 
-This dimension includes attributes:
+This dimension contains details related to location and comprises the following attributes:
 - borough_name
 - borough_code 
 - neighborhood 
@@ -179,7 +179,13 @@ given that these values experience changes solely in correlation with each sale.
 
 ### Date Dimension
 
-[Include a brief description of this dimension.]
+This dimension contains all information related to sale dates and spans from '2016-01-01' to '2019-01-01'. The attributes encompassed are:
+- date_value
+- year_value
+- month_value
+- day_value
+- quarter_value
+- date_key
 
 ### Fact Table
 
