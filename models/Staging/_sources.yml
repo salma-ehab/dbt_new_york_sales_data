@@ -11,7 +11,7 @@ sources:
           - name: borough_name
             description: "The name of the borough in which the property is located."
 
-          - name: borough_code
+          - name: borough
             description: "The code of the borough in which the property is located."
 
           - name: neighborhood
@@ -20,8 +20,8 @@ sources:
           - name: building_class_category
             description: '{{ doc("building_class_category_description") }}'
 
-          - name: tax_class_at_present
-            description: '{{ doc("tax_class_at_present_description") }}'
+          - name: tax_subclass_at_present
+            description: '{{ doc("tax_subclass_description") }}'
 
           - name: block
             description: '{{ doc("block_description") }}'
@@ -33,7 +33,50 @@ sources:
             description: '{{ doc("easement_description") }}'
 
           - name: building_class_at_present
-            description: '{{ doc("building_class_at_present_description") }}'
+            description: '{{ doc("building_class_description") }}'
+
+          - name: address
+            description: '{{ doc("address_description") }}'
+
+          - name: apartment_number
+            description: "The apartment number of the property as listed on the Sales File."
+
+          - name: zip_code
+            description: "The property’s postal code."
+
+          - name: residential_units
+            description: "The number of residential units at the listed property."
+
+          - name: commercial_units
+            description: "The number of commercial units at the listed property."
+
+          - name: total_units
+            description: "The total number of units at the listed property."
+
+          - name: land_square_feet
+            description: "The land area of the property listed in square feet."
+
+          - name: gross_square_feet
+            description: '{{ doc("gross_square_feet_description") }}'
+
+          - name: year_built
+            description: "Year the structure on the property was built."
+
+          - name: tax_class_at_time_of_sale
+            description: '{{ doc("tax_class_description") }}'
+
+          - name: building_class_at_time_of_sale
+            description: '{{ doc("building_class_description") }}'
+
+          - name: sales_price
+            description: '{{ doc("sales_price_description") }}'
+
+          - name: sale_date
+            description: "Date the property sold."
+
+          - name: sale_year
+            description: "The year in which the property was sold, as well as the source year of the data."
+
               
   
           

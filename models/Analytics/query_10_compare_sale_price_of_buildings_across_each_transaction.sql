@@ -6,12 +6,10 @@
 
 {# It was noted that multiple records for the same building may exist due to occasional missing or 
   incorrectly entered zip codes. To ensure the unique identification of buildings in such instances, 
-  distinctive combinations of borough, neighborhood, block, and lot were chosen #}
+  distinctive combinations of borough, neighborhood, block, and lot were grouped together #}
 
-{# At times, individual apartments were sold instead of the entire building. 
-  Filtering was performed using the apartment number. However, instances were identified 
-  where the apartment number was not applicable, yet apartments were still sold. 
-  This was particularly evident when the count for such cases exceeded 850 #}
+{# As individual apartments are being sold, this query serves the purpose of identifying the sales 
+   linked to a building, particularly when the building has been involved in multiple sales transactions #}
 
 with 
 
@@ -45,8 +43,6 @@ buildings_sold_multiple_times as
 
     inner join property_fact_table
     on property_fact_table.location_key = location_dim.location_key
-
-    where property_fact_table.apartment_number = 'Not Applicable'
 
     group by location_dim.borough_name, location_dim.neighborhood, location_dim.block, location_dim.lot
     having (count(*) > 1)

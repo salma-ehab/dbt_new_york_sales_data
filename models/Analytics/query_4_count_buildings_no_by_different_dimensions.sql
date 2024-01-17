@@ -2,9 +2,9 @@
   This entailed counting buildings in each neighborhood, borough, and block, 
   and subsequently combining all the data through a union operation #}
 
-{# It was observed that at times, the zip code was unknown. 
-   To uniquely count buildings, the approach involved selecting distinct combinations of borough name, 
-   neighborhood, block, and lot #}
+{# It was noted that multiple records for the same building may exist due to occasional missing or 
+  incorrectly entered zip codes. To ensure the unique identification of buildings in such instances, 
+  distinctive combinations of borough, neighborhood, block, and lot were chosen #}
 
 with 
 

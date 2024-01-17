@@ -19,6 +19,7 @@ property_specs_at_sale_dim as
 {# The dataset was filtered to exclude cases where the year built was null, 
    indicating missing data, and sale price was zero, 
    suggesting a transfer of ownership without a cash consideration #}
+
 diff_in_years_bet_sale_date_and_year_built as
 (
     select 

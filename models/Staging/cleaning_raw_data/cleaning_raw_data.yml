@@ -1,0 +1,94 @@
+version: 2
+
+models:
+  - name: clean_raw_sales_data
+    description: "This model is utilized to prepare the data for analytics."
+
+    columns:
+          - name: borough_name
+            description: "No data cleansing was required for that field."
+
+          - name: borough_code
+            description: "No data cleansing was required for that field."
+
+          - name: neighborhood
+            description: "No data cleansing was required for that field."
+
+          - name: building_class_category
+            description: "No data cleansing was required for that field."
+
+          - name: tax_class_at_present
+            description: '{{ doc("cleaned_tax_class_at_present_description") }}'
+
+          - name: tax_subclass_at_present
+            description: '{{ doc("cleaned_tax_subclass_at_present_description") }}'
+
+          - name: block
+            description: "No data cleansing was required for that field."
+
+          - name: lot
+            description: "No data cleansing was required for that field."
+
+          - name: easement
+            description: "Replaced any null values with a descriptive string 'No Easement'."
+
+          - name: building_class_at_present
+            description: "Replaced any null values with a descriptive string 'Unknown'."
+
+          - name: address
+            description: '{{ doc("cleaned_address_description") }}'
+
+          - name: apartment_number
+            description: '{{ doc("cleaned_apartment_number_description") }}'
+
+          - name: zip_code
+            description:  '{{ doc("cleaned_zip_code_description") }}'
+
+          - name: residential_units
+            description:  '{{ doc("cleaned_units_description") }}'
+
+          - name: commercial_units
+            description:  '{{ doc("cleaned_units_description") }}'
+
+          - name: total_units
+            description:  '{{ doc("cleaned_units_description") }}'
+
+          - name: land_square_feet
+            description:  '{{ doc("cleaned_feets_description") }}'
+
+          - name: gross_square_feet
+            description:  '{{ doc("cleaned_feets_description") }}'
+
+          - name: year_built
+            description:  '{{ doc("cleaned_year_built_description") }}'
+
+          - name: decade_built
+            description:  "Added this field to indicate the decade of construction."
+
+          - name: tax_class_at_time_of_sale
+            description: "No data cleansing was required for that field."
+
+          - name: building_class_at_time_of_sale
+            description: "No data cleansing was required for that field."
+
+          - name: sales_price
+            description:  '{{ doc("cleaned_sales_price_description") }}'
+
+          - name: sale_date
+            description:  "No data cleansing was required for that field."
+
+          - name: sale_day
+            description:  "This filed was extracted from the sale_date field."
+
+          - name: sale_month
+            description:  "This filed was extracted from the sale_date field."
+
+          - name: sale_quarter
+            description:  "This filed was extracted from the sale_date field."
+
+          - name: sale_year
+            description:  "Cleaning wasn't necessary for that field since the source year of the data aligns with the year value indicated in the sale_date field."
+
+
+
+      

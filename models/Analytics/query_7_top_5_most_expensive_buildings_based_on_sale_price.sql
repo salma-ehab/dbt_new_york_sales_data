@@ -6,7 +6,7 @@
    
 {# It was noted that multiple records for the same building may exist due to occasional missing or 
   incorrectly entered zip codes. To ensure the unique identification of buildings in such instances, 
-  distinctive combinations of borough, neighborhood, block, and lot were chosen #}
+  distinctive combinations of borough, neighborhood, block, and lot were grouped together #}
 
 with 
 
