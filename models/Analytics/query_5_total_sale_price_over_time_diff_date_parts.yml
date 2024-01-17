@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: query_5_total_sale_price_over_time_diff_date_parts
+    description: '{{ doc("query_5_description") }}'
+
+    columns:
+          - name: year_value
+            description: "The year's value."
+
+          - name: quarter_value
+            description: "The quarter's value."
+
+          - name: month_value
+            description: "The month's value."
+
+          - name: total_sales_price
+            description: "The total cumulative sales prices."

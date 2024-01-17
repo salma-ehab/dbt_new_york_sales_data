@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: query_6_compare_avg_sale_price_each_combination_tax_present_tax_at_sale
+    description: '{{ doc("query_6_description") }}'
+
+    columns:
+          - name: tax_class_at_present
+            description: "The tax class at present."
+
+          - name: avg_sale_price_present
+            description: "The average sale price pertaining to the present tax class."
+
+          - name: tax_class_at_time_of_sale
+            description: "The tax class at the time of sale."
+
+          - name: avg_sale_price_at_sale
+            description: "The average sale price pertaining to the tax class at the time of sale."
+
+          - name: comparing_avg_sale_price
+            description: "The result of comparing the average sale prices pertaining to the tax class at present and at the time of sale to determine if one is greater, lesser, or equal."

@@ -230,6 +230,18 @@ Multiple queries were run to conduct analyses on the data.
   incorrectly entered zip codes. To ensure the unique identification of buildings in such instances, 
   distinctive combinations of borough, neighborhood, block, and lot were chosen.
 
+### Query 5:
+- This query entailed calculating cumulative sales figures across different date intervals.
+
+- The analysis was conducted on a yearly, monthly, and quarterly basis, avoiding daily breakdowns to 
+  enhance result readability. Subsequently, the data was consolidated using a union operation.
+
+### Query 6:
+- This query involved  grouping the data by the current tax class and the tax class at the time of sale, 
+  followed by comparing the average sale prices for each combination, determining whether they were greater, lesser, or equal. 
+
+- The unknown class category was excluded due to its status as a missing data value.
+
 ## Data Dictionary
 
 For additional information on data fields, please refer to the [data dictionary](https://www.nyc.gov/assets/finance/downloads/pdf/07pdf/glossary_rsf071607.pdf).
