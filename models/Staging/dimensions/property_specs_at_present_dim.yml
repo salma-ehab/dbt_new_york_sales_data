@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: property_specs_at_present_dim
+    description: '{{ doc("property_specs_at_present_dim_description") }}'
+
+    columns:
+          - name: building_class_at_present
+            description: '{{ doc("building_class_description") }}'
+
+          - name: tax_class_at_present
+            description: '{{ doc("tax_class_description") }}'
+
+          - name: tax_subclass_at_present
+            description: '{{ doc("tax_subclass_description") }}'
+
+          - name: property_specs_at_present_key
+            description: "A unique identifier assigned to each combination of present properties."

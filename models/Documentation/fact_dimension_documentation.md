@@ -17,3 +17,13 @@ It is crucial to maintain a separation between present and at sale properties as
 would inevitably result in a higher row count.
 
 {% enddocs %}
+
+{% docs property_specs_at_present_dim_description %}
+
+This dimension encompasses only those building properties that are pertinent to the present.
+
+The present values shouldn't be considered as slowly changing dimensions since they only change once with each 
+sale occurrence. Thus, it is suitable to include them as dimensions associated with the sales fact table, 
+given that these values experience changes solely in correlation with each sale.
+
+{% enddocs %}

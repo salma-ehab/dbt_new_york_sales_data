@@ -160,14 +160,22 @@ This dimension encompasses building properties, excluding those pertaining to th
 - easement
 - year_built
 - decade_built
--property_specs_at_sale_key
+- property_specs_at_sale_key
 
 It is crucial to maintain a separation between present and at sale properties as combining them 
 would inevitably result in a higher row count.
 
 ### Property Specs at Present Dimension
 
-[Include a brief description of this dimension.]
+This dimension encompasses only those building properties that are pertinent to the present. These attributes are:
+- building_class_at_present
+- tax_class_at_present
+- tax_subclass_at_present
+- property_specs_at_present_key
+
+The present values shouldn't be considered as slowly changing dimensions since they only change once with each 
+sale occurrence. Thus, it is suitable to include them as dimensions associated with the sales fact table, 
+given that these values experience changes solely in correlation with each sale.
 
 ### Date Dimension
 
