@@ -212,3 +212,7 @@ This dimension contains all information related to sale dates and spans from '20
 The project concluded with the execution of multiple queries using dbt (data build tool). dbt transformed the prepared data, providing valuable insights.
 
 This README provides an overview of the comprehensive approach to handling data—from loading raw information into Snowflake to executing refined queries using dbt.
+
+## Data Dictionary
+
+For additional information on data fields, please refer to the [data dictionary](https://www.nyc.gov/assets/finance/downloads/pdf/07pdf/glossary_rsf071607.pdf).

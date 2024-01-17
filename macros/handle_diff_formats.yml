@@ -1,0 +1,17 @@
+version: 2
+
+macros:
+  - name: transform_and_cast_column
+    description: "This macro's purpose is to standardize the format of certain columns, ensuring consistency across different files and aligning them with the structure observed in the 2018 format."
+    arguments:
+      - name: column_name
+        type: string
+        description: "The column slated for transformation."
+      - name: building_class_column
+        type: string
+        description: "The column determining the transformation operation to be executed."
+      - name: column_type
+        type: string
+        description: "The data type to which the column will be cast."
+      
+      

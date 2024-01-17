@@ -2,6 +2,7 @@ version: 2
 
 sources:
   - name: sales_data
+    description: "A database consisting of a single table housing raw data from Annualized Sales files obtained from the New York City Department of Finance."
     database: new_york_city_sales_raw
     schema: sales_data
     tables:
