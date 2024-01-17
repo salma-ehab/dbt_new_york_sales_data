@@ -160,6 +160,8 @@ were represented as dashes. While in the 2017 format, units were zeros, and squa
 
 ## Star Schema 
 
+![Alt Text](https://drive.google.com/uc?export=download&id=14Z-w6omNt2nI7TE5ufdpywzxWijI5z1D)
+
 The star schema is composed of the following key elements:
 
 ### Sales Fact Table
