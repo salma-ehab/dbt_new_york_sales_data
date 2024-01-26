@@ -54,3 +54,10 @@ maintaining a separate Order dimension proves to be more straightforward, as upd
 be made within that specific dimension.
 
 {% enddocs %}
+
+{% docs region_dim_description %}
+
+A region dimension containing unique combinations of country, city, 
+state, region, and postal code of every customer, with an iterative key serving as the primary key.
+
+{% enddocs %}

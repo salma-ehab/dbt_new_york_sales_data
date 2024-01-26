@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: dim_region
+    description: '{{ doc("region_dim_description") }}'
+    
+    columns:
+          - name: region_iterative_key
+            description: "An incremental key assigned to each region."
+            tests:
+              - unique
+
+          - name: country
+            description: "Country of residence of the Customer."
+
+          - name: region
+            description: "Region where the Customer belongs."
+
+          - name: state
+            description: "State of residence of the Customer."
+
+          - name: city
+            description: "City of residence of the Customer."
+          
+          - name: postal_code
+            description: "Postal Code of every Customer."
+
+
+         
+  
+          
