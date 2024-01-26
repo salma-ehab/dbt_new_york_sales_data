@@ -54,11 +54,11 @@ establishing a star schema, and executing queries.
   - *Description:* Shipping Mode specified by the Customer.
   - *Tests:*
     - accepted_values:
-        values:
-          - Standard Class
-          - Second Class
-          - First Class
-          - Same Day
+      - Standard Class
+      - Second Class
+      - First Class
+      - Same Day
+      
 
 - **customer_id**
   - *Description:* Unique ID to identify each Customer.
@@ -72,10 +72,9 @@ establishing a star schema, and executing queries.
   - *Description:* The segment where the Customer belongs.
   - *Tests:*
     - accepted_values:
-        values:
-          - Consumer
-          - Corporate
-          - Home Office
+      - Consumer
+      - Corporate
+      - Home Office
 
 - **country**
   - *Description:* Country of residence of the Customer.
