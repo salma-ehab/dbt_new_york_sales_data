@@ -248,7 +248,7 @@ Tests were also carried out on this dimension to validate the uniqueness of the 
 
 Multiple queries were run to conduct analyses on the data.
 
-### Query 1:
+### Query 1 (Monthly Customer Sales):
 - This query aims to retrieve the monthly sales data for each customer.
 
 ## Project File Structure:
