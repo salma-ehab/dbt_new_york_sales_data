@@ -16,7 +16,7 @@ establishing a star schema, and executing queries.
   - [Order Dimension](#order-dimension)
   - [Product Dimension](#product-dimension)
 - [Analytics](#analytics)
-  - [Query 1 (Monthly Customer Sales)](#query-1)
+  - [Monthly Customer Sales Query](#monthly-customer-sales-query)
 - [Project File Structure](#project-file-structure)
 - [Data Source and Dictionary](#data-source-and-dictionary)
 
@@ -248,7 +248,7 @@ Tests were also carried out on this dimension to validate the uniqueness of the 
 
 Multiple queries were run to conduct analyses on the data.
 
-### Query 1 (Monthly Customer Sales)
+### Monthly Customer Sales Query:
 - This query aims to retrieve the monthly sales data for each customer.
 
 ## Project File Structure:
