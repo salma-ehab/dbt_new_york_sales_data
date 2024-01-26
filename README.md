@@ -18,6 +18,7 @@ establishing a star schema, and executing queries.
 - [Analytics](#analytics)
   - [Monthly Customer Sales Query](#monthly-customer-sales-query)
   - [Product Category and Subcategory Total Sales Query](#product-category-and-subcategory-total-sales-query)
+  - [Top Selling Products Query](#top-selling-products-query)
 - [Project File Structure](#project-file-structure)
 - [Data Source and Dictionary](#data-source-and-dictionary)
 
@@ -254,6 +255,9 @@ Multiple queries were run to conduct analyses on the data.
 
 ### Product Category and Subcategory Total Sales Query:
 - This query aims to retrieve the total sales for each product category and subcategory.
+
+### Top Selling Products Query:
+- This query aims to retrieve top 10 selling products.
 
 ## Project File Structure:
 
