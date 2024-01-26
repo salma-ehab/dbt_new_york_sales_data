@@ -1,0 +1,40 @@
+version: 2
+
+models:
+  - name: fct_sales
+    description: '{{ doc("sales_fct_description") }}'
+    
+    columns:
+          - name: row_id
+            description: "Unique ID for each row."
+
+          - name: sales
+            description: "Sales of the Product."
+
+          - name: quantity
+            description: "Quantity of the Product."
+
+          - name: discount
+            description: "Discount provided."
+
+          - name: profit
+            description: "Profit/Loss incurred."
+
+          - name: customer_id
+            description: "Unique ID to identify each Customer."
+
+          - name: region_iterative_key
+            description: "An incremental key assigned to each region."
+
+          - name: order_id
+            description: "Unique Order ID for each Customer."
+
+          - name: product_iterative_key
+            description: "An incremental key assigned to each product."
+
+    
+              
+
+         
+  
+          

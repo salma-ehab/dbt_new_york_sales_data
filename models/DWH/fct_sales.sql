@@ -1,9 +1,10 @@
-{# Create a fact table in which each row corresponds to an item per order, 
-   with row ID serving as the primary key #}
+{# Create a sales fact table in which each row corresponds to an item per order, 
+   with the combined foreign keys of customer ID, region iterative key, order ID, and product iterative key
+   serving as the primary key #}
 
 
 {{ config(
-  unique_key=['row_id'])}}
+  unique_key=['customer_id', 'region_iterative_key','order_id','product_iterative_key'])}}
 
 
 with 

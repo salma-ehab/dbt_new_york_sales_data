@@ -2,8 +2,10 @@
 
 This table contains information related to the operations and functions of a retail superstore.
 
-While no cleaning has been performed on the data, it was deemed prudent to store it here to account for potential 
-changes in the source data. Additionally, utilizing dbt for versioning purposes further justifies this approach.
+It was observed that, in instances where a customer, order, product, and region were identical,
+there might be several rows, each depicting the same product within the same order.
+In such cases, the sales, quantity, and profit values for that product in that order were aggregated, 
+while the discount remained unchanged.
 
 {% enddocs %}
 
@@ -59,5 +61,13 @@ be made within that specific dimension.
 
 A region dimension containing unique combinations of country, city, 
 state, region, and postal code of every customer, with an iterative key serving as the primary key.
+
+{% enddocs %}
+
+{% docs sales_fct_description %}
+
+A sales fact table in which each row corresponds to an item per order, 
+with the combined foreign keys of customer ID, region iterative key, order ID, and product iterative key
+serving as the primary key.
 
 {% enddocs %}
