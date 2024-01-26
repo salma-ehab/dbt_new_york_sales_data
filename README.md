@@ -17,6 +17,7 @@ establishing a star schema, and executing queries.
   - [Product Dimension](#product-dimension)
 - [Analytics](#analytics)
   - [Monthly Customer Sales Query](#monthly-customer-sales-query)
+  - [Product Category and Subcategory Total Sales Query](#product-category-and-subcategory-total-sales-query)
 - [Project File Structure](#project-file-structure)
 - [Data Source and Dictionary](#data-source-and-dictionary)
 
@@ -250,6 +251,9 @@ Multiple queries were run to conduct analyses on the data.
 
 ### Monthly Customer Sales Query:
 - This query aims to retrieve the monthly sales data for each customer.
+
+### Product Category and Subcategory Total Sales Query:
+- This query aims to retrieve the total sales for each product category and subcategory.
 
 ## Project File Structure:
 

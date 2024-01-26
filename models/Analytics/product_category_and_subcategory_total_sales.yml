@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: product_category_and_subcategory_total_sales
+    description: "A query to retrieve total sales for each product category and subcategory."
+    
+    columns:
+          - name: category
+            description: "Category of the product ordered."
+
+          - name: subcategory
+            description: "Sub-Category of the product ordered."
+
+          - name: total_sales
+            description: "Total sales for each product category and subcategory."
+
+
+         
+  
+          
