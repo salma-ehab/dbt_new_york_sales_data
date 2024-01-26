@@ -249,6 +249,7 @@ Tests were also carried out on this dimension to validate the uniqueness of the 
 Multiple queries were run to conduct analyses on the data.
 
 ### Query 1:
+- This query aims to retrieve the monthly sales data for each customer.
 
 ## Project File Structure:
 
@@ -261,6 +262,13 @@ The project files are organized as follows:
 - **DWH Folder:**
   - Houses the sales fact table and dimensions.
   - Located within the Models folder.
+
+- **Analytics Folder:**
+  - Contains queries.
+  - Located within the Models folder.
+
+- **tests Folder:**
+  - Contains singular tests.
 
 ## Data Source and Dictionary
 

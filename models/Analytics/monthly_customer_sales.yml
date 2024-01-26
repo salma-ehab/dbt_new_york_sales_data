@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: monthly_customer_sales
+    description: "A query to retrieve the monthly sales data for each customer."
+    
+    columns:
+          - name: year_value
+            description: "The value representing the year."
+
+          - name: month_value
+            description: "The value representing the month."
+
+          - name: customer_id
+            description: "Customer's ID."
+
+          - name: customer_name
+            description: "Name of the Customer."
+
+          - name: monthly_sales
+            description: "Total monthly sales pertaining to each customer."
+
+
+         
+  
+          
