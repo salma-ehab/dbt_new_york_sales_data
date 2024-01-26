@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: dim_date
+    description: '{{ doc("date_dim_description") }}'
+    
+    columns:
+          - name: date_value
+            description: "The value representing the date."
+
+          - name: year_value
+            description: "The value representing the year."
+
+          - name: quarter_value
+            description: "The value representing the quarter."
+
+          - name: month_value
+            description: "The value representing the month."
+
+          - name: day_value
+            description: "The value representing the day."
+
+          - name: date_key
+            description: "A numeric key corresponding to the date."
+            tests:
+              - unique
+
+         
+  
+          

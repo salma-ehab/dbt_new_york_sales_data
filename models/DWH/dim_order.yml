@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: dim_order
+    description: '{{ doc("order_dim_description") }}'
+    
+    columns:
+          - name: order_id
+            description: "Unique Order ID for each Customer."
+            tests:
+              - unique
+
+          - name: order_date
+            description: "A numeric key corresponding to the Order Date of the product."
+            tests:
+              - relationships:
+                   to: ref('dim_date')
+                   field: date_key
+
+          - name: ship_date
+            description: "A numeric key corresponding to the Shipping Date of the Product."
+            tests:
+              - relationships:
+                   to: ref('dim_date')
+                   field: date_key
+
+          - name: ship_mode
+            description: "Shipping Mode specified by the Customer."
+         
+  
+          

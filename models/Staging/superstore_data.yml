@@ -1,0 +1,98 @@
+version: 2
+
+models:
+  - name: superstore_data
+    description: '{{ doc("superstore_data_description") }}'
+    
+    columns:
+          - name: row_id
+            description: "Unique ID for each row."
+
+          - name: order_id
+            description: "Unique Order ID for each Customer."
+
+          - name: order_date
+            description: "Order Date of the product."
+            tests:
+              - not_null
+
+          - name: ship_date
+            description: "Shipping Date of the Product."
+            tests:
+              - not_null
+
+          - name: ship_mode
+            description: "Shipping Mode specified by the Customer."
+            tests:
+              - not_null
+
+          - name: customer_id
+            description: "Unique ID to identify each Customer."
+
+          - name: customer_name
+            description: "Name of the Customer."
+            tests:
+              - not_null
+
+          - name: segment
+            description: "The segment where the Customer belongs."
+            tests:
+              - not_null
+
+          - name: country
+            description: "Country of residence of the Customer."
+            tests:
+              - not_null
+
+          - name: city
+            description: "City of residence of the Customer."
+            tests:
+              - not_null
+
+          - name: state
+            description: "State of residence of the Customer."
+            tests:
+              - not_null
+
+          - name: postal_code
+            description: "Postal Code of every Customer."
+            tests:
+              - not_null
+
+          - name: region
+            description: "Region where the Customer belongs."
+            tests:
+              - not_null
+
+          - name: product_id
+            description: "ID of the Product."
+
+          - name: category
+            description: "Category of the product ordered."
+            tests:
+              - not_null
+
+          - name: subcategory
+            description: "Sub-Category of the product ordered."
+            tests:
+              - not_null
+
+          - name: product_name
+            description: "Name of the Product."
+            tests:
+              - not_null
+
+          - name: sales
+            description: "Sales of the Product."
+
+          - name: quantity
+            description: "Quantity of the Product."
+
+          - name: discount
+            description: "Discount provided."
+
+          - name: profit
+            description: "Profit/Loss incurred."
+              
+  
+          

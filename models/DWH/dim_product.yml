@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: dim_product
+    description: '{{ doc("product_dim_description") }}'
+    
+    columns:
+          - name: product_iterative_key
+            description: "An incremental key assigned to each product."
+            tests:
+              - unique
+
+          - name: product_id
+            description: "ID of the Product."
+
+          - name: product_name
+            description: "Name of the Product."
+
+          - name: category
+            description: "Category of the product ordered."
+
+          - name: subcategory
+            description: "Sub-Category of the product ordered."
+
+
+         
+  
+          

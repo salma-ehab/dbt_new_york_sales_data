@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: dim_customer
+    description: '{{ doc("customer_dim_description") }}'
+    
+    columns:
+          - name: customer_id
+            description: "Unique ID to identify each Customer."
+            tests:
+              - unique
+
+          - name: customer_name
+            description: "Name of the Customer."
+
+          - name: segment
+            description: "The segment where the Customer belongs."
+
+         
+  
+          
