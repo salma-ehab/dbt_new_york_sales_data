@@ -16,7 +16,7 @@ establishing a star schema, and executing queries.
   - [Order Dimension](#order-dimension)
   - [Product Dimension](#product-dimension)
 - [Analytics](#analytics)
-  - [Query 1](#query-1)
+  - [Query 1 (Monthly Customer Sales)](#query-1)
 - [Project File Structure](#project-file-structure)
 - [Data Source and Dictionary](#data-source-and-dictionary)
 
