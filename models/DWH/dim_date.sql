@@ -1,4 +1,4 @@
-{# Create a date dimension comprising date values ranging from "2014-01-03" to "2018-01-06." 
+{# Create a date dimension comprising date values ranging from "2014-01-03" to "2018-01-06".
    The date values include date, year, quarter, month, day, and a numeric key corresponding to the date #}
 
 

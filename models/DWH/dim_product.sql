@@ -1,5 +1,6 @@
 {# Create a product dimension containing unique combinations of 
-   product ID, product name, category, and subcategory #}
+   product ID, product name, category, and subcategory, with an iterative key 
+   serving as the primary key #}
 
 {# The uniqueness of the product ID is compromised, as it is estimated that certain products, 
    upon becoming extinct, had their IDs repurposed for newer products. 

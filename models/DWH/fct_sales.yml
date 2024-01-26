@@ -22,15 +22,31 @@ models:
 
           - name: customer_id
             description: "Unique ID to identify each Customer."
+            tests:
+              - relationships:
+                   to: ref('dim_customer')
+                   field: customer_id
 
           - name: region_iterative_key
             description: "An incremental key assigned to each region."
+            tests:
+              - relationships:
+                   to: ref('dim_region')
+                   field: region_iterative_key
 
           - name: order_id
             description: "Unique Order ID for each Customer."
+            tests:
+              - relationships:
+                   to: ref('dim_order')
+                   field: order_id
 
           - name: product_iterative_key
             description: "An incremental key assigned to each product."
+            tests:
+              - relationships:
+                   to: ref('dim_product')
+                   field: product_iterative_key
 
     
               

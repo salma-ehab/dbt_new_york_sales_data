@@ -23,7 +23,7 @@ the decision to use the customer ID as the primary key.
 {% docs product_dim_description %}
 
 A product dimension containing unique combinations of product ID, product name, 
-category, and subcategory. 
+category, and subcategory, with an iterative key serving as the primary key.
 
 The uniqueness of the product ID is compromised, as it is estimated that certain products, 
 upon becoming extinct, had their IDs repurposed for newer products. The absence of specific 
@@ -34,7 +34,7 @@ As a result, the current approach adopts an iterative key to handle this situati
 
 {% docs date_dim_description %}
 
-A date dimension comprising date values ranging from "2014-01-03" to "2018-01-06." 
+A date dimension comprising date values ranging from "2014-01-03" to "2018-01-06".
 The date values include date, year, quarter, month, day, and a numeric key corresponding to the date.
 
 {% enddocs %}
