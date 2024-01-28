@@ -20,6 +20,8 @@ establishing a star schema, and executing queries.
   - [Product Category and Subcategory Metrics Query](#product-category-and-subcategory-metrics-query)
   - [Top Selling Products Query](#top-selling-products-query)
   - [Sales and Profit Trends Over Time Query](#sales-and-profit-trends-over-time-query)
+  - [Products with Highest Profit Margins](#products-with-highest-profit-margins)
+  - [Products with Lowest Profit Margins](#products-with-lowest-profit-margins)
 - [Project File Structure](#project-file-structure)
 - [Data Source and Dictionary](#data-source-and-dictionary)
 
@@ -269,6 +271,12 @@ Multiple queries were run to conduct analyses on the data.
 
 - The computation was executed on a yearly, quarterly and monthly basis, with a deliberate decision 
   to avoid daily breakdowns for enhanced result clarity.
+
+### Products with Highest Profit Margins:
+- This query aims to obtain the top 10 products with the highest profit margins.
+
+### Products with Lowest Profit Margins:
+- This query aims to obtain the top 10 products with the lowest profit margins.
 
 ## Project File Structure:
 

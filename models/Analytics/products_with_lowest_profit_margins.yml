@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: products_with_lowest_profit_margins
+    description: "This query aims to obtain the top 10 products with the lowest profit margins."
+    
+    columns:
+          - name: product_id
+            description: "ID of the Product."
+
+          - name: product_name
+            description: "Name of the Product."
+
+          - name: profit_margin
+            description: "Profit margin pertaining to each product."
+
+
+         
+  
+          
