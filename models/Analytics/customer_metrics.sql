@@ -97,7 +97,7 @@ customer_metrics as
     datediff(day, max(dim_date.date_value), '2017-12-31') as recency_in_days,
     
     round((datediff(day, min (dim_date.date_value), max(dim_date.date_value)) / 
-    count(distinct dim_order.order_id)), 3) as average_time_gap_in_days,
+    count(distinct dim_order.order_id)), 3) as average_time_gap,
 
     preferred_category.category as preferred_category,
     preferred_subcategory.subcategory as preferred_subcategory,

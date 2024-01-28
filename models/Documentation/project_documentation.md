@@ -181,3 +181,12 @@ and averages for both sales and profits for each combination of discount and pro
 Additionally, it includes a calculation for profit margin.
 
 {% enddocs %}
+
+{% docs shipping_modes_analysis_query_description %}
+
+This query aims to assess shipping modes by computing metrics such as 
+total orders per shipping mode, distribution percentage for each shipping mode, 
+average shipping time, as well as the overall and average values for both sales and profits, 
+while also taking into account the profit margin.
+
+{% enddocs %}

@@ -1,0 +1,39 @@
+version: 2
+
+models:
+  - name: shipping_modes_analysis
+    description: '{{ doc("shipping_modes_analysis_query_description") }}'
+    
+    columns:
+          - name: ship_mode
+            description: "Shipping Mode specified by the Customer."
+
+          - name: total_orders_per_shipping_mode
+            description: "The count of unique orders for each shipping mode."
+
+          - name: shipping_mode_percent_distribution
+            description: "Distribution percentage for each shipping mode."
+
+          - name: avg_shipping_time
+            description: "The average shipping time for each shipping mode."
+
+          - name: total_sales
+            description: "Total sales pertaining to the specified shipping mode."
+
+          - name: total_profit
+            description: "Total profits pertaining to the specified shipping mode."
+
+          - name: avg_sales
+            description: "Mean sales corresponding to the specified shipping mode."
+
+          - name: avg_profit
+            description: "Mean profits corresponding to the specified shipping mode."
+
+          - name: profit_margin
+            description: "The profit margin corresponding to the specified shipping mode."
+
+
+
+         
+  
+          

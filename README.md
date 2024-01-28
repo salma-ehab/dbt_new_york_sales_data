@@ -25,6 +25,7 @@ establishing a star schema, and executing queries.
   - [Products with Highest Profit Margins Query](#products-with-highest-profit-margins-query)
   - [Products with Lowest Profit Margins Query](#products-with-lowest-profit-margins-query)
   - [Impact of Discounts on Sales and Profit Query](#impact-of-discounts-on-sales-and-profit-query)
+  - [Shipping Modes Analysis Query](#shipping-modes-analysis-query)
   - [Location Metrics Query](#location-metrics-query)
   - [Location Sales and Profit Growth Rates Query](#location-sales-and-profit-growth-rates-query)
   - [Locations with Highest Profit Margins Query](#locations-with-highest-profit-margins-query)
@@ -309,6 +310,12 @@ Multiple queries were run to conduct analyses on the data.
   It seeks to retrieve unique counts of orders, total products purchased, overall sums, 
   and averages for both sales and profits for each combination of discount and product. 
   Additionally, it includes a calculation for profit margin.
+
+### Shipping Modes Analysis Query:
+- This query aims to assess shipping modes by computing metrics such as 
+  total orders per shipping mode, distribution percentage for each shipping mode, 
+  average shipping time, as well as the overall and average values for both sales and profits, 
+  while also taking into account the profit margin.
 
 ### Location Metrics Query:
 - This query aims to extract metrics for every location, encompassing measures 

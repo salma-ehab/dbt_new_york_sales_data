@@ -35,8 +35,8 @@ models:
           - name: recency_in_days
             description: "The number of days since the Customer's most recent order."
 
-          - name: average_time_gap_in_days
-            description: "The average time interval between a Customer's orders, measured in days."
+          - name: average_time_gap
+            description: "The average time interval between Customer's orders."
 
           - name: preferred_category
             description: "The Customer's preferred product category."
