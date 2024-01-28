@@ -1,0 +1,47 @@
+version: 2
+
+models:
+  - name: location_sales_and_profit_growth_rates
+    description: '{{ doc("location_sales_and_profit_growth_rates_query_description") }}'
+    
+    columns:
+          - name: country
+            description: "Country of residence of the Customers."
+
+          - name: region
+            description: "Region where the Customers belong."
+
+          - name: state
+            description: "State of residence of the Customers."
+
+          - name: city
+            description: "City of residence of the Customers."
+
+          - name: year_value
+            description: "The value representing the year."
+
+          - name: quarter_value
+            description: "The value representing the quarter."
+
+          - name: month_value
+            description: "The value representing the month."
+
+          - name: total_sales
+            description: "Total sales for the corresponding location."
+
+          - name: sales_growth_rate
+            description: "The monthly growth rate of sales for the corresponding location."
+
+          - name: total_profit
+            description: "Total profits for the corresponding location."
+
+          - name: profit_growth_rate
+            description: "The monthly growth rate of profits for the corresponding location."
+
+        
+
+       
+
+         
+  
+          

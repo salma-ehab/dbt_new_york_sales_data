@@ -118,3 +118,12 @@ such as the number of distinct orders, total sum, average, 25th percentile, medi
 standard deviation for both sales and profit, along with the profit margin.
 
 {% enddocs %}
+
+{% docs location_sales_and_profit_growth_rates_query_description %}
+
+This query aims to compute the monthly growth rates of sales and profits for 
+every location. In instances where certain locations have no sales in a given month, 
+the growth rates for both sales and profits in the subsequent month are null, 
+as there is no basis for comparison.
+
+{% enddocs %}

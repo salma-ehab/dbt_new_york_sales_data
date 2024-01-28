@@ -25,6 +25,7 @@ establishing a star schema, and executing queries.
   - [Products with Highest Profit Margins Query](#products-with-highest-profit-margins-query)
   - [Products with Lowest Profit Margins Query](#products-with-lowest-profit-margins-query)
   - [Location Metrics Query](#location-metrics-query)
+  - [Location Sales and Profit Growth Rates Query](#location-sales-and-profit-growth-rates-query)
 - [Project File Structure](#project-file-structure)
 - [Data Source and Dictionary](#data-source-and-dictionary)
 
@@ -299,6 +300,12 @@ Multiple queries were run to conduct analyses on the data.
 - This query aims to extract metrics for every location, encompassing measures 
   such as the number of distinct orders, total sum, average, 25th percentile, median, 75th percentile, 
   standard deviation for both sales and profit, along with the profit margin.
+
+### Location Sales and Profit Growth Rates Query:
+- This query aims to compute the monthly growth rates of sales and profits for 
+  every location. In instances where certain locations have no sales in a given month, 
+  the growth rates for both sales and profits in the subsequent month are null, 
+  as there is no basis for comparison.
 
 ## Project File Structure:
 

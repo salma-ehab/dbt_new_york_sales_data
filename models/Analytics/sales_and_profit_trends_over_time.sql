@@ -45,8 +45,8 @@ sales_and_profit_trends_by_year as
     then null
     else 
     cast(round(((sum(fct_sales.sales) - lag(sum(fct_sales.sales), 1, 0) 
-    over (order by dim_date.year_value)) / lag(sum(fct_sales.sales), 1, 1) 
-    over (order by dim_date.year_value)) * 100 ,3) as varchar) || '%'
+    over (order by dim_date.year_value)) / abs(lag(sum(fct_sales.sales), 1, 1) 
+    over (order by dim_date.year_value))) * 100 ,3) as varchar) || '%'
     end as sales_growth_rate,
 
     case when lag(sum(fct_sales.sales), 1, 0) 
@@ -54,8 +54,8 @@ sales_and_profit_trends_by_year as
     then null
     else 
     cast(round(((sum(fct_sales.profit) - lag(sum(fct_sales.profit), 1, 0) 
-    over (order by dim_date.year_value)) / lag(sum(fct_sales.profit), 1, 1) 
-    over (order by dim_date.year_value)) * 100 ,3) as varchar) || '%'
+    over (order by dim_date.year_value)) / abs(lag(sum(fct_sales.profit), 1, 1) 
+    over (order by dim_date.year_value))) * 100 ,3) as varchar) || '%'
     end as profit_growth_rate,
 
     cast (round((sum(fct_sales.profit) / sum(fct_sales.sales)) * 100 ,3) as varchar) || '%' as profit_margin
@@ -102,8 +102,8 @@ sales_and_profit_trends_by_quarter as
     then null
     else 
     cast(round(((sum(fct_sales.sales) - lag(sum(fct_sales.sales), 1, 0) 
-    over (order by dim_date.year_value, dim_date.quarter_value)) / lag(sum(fct_sales.sales), 1, 1) 
-    over (order by dim_date.year_value, dim_date.quarter_value)) * 100 ,3) as varchar ) || '%'
+    over (order by dim_date.year_value, dim_date.quarter_value)) / abs(lag(sum(fct_sales.sales), 1, 1) 
+    over (order by dim_date.year_value, dim_date.quarter_value))) * 100 ,3) as varchar ) || '%'
     end as sales_growth_rate,
 
     case when lag(sum(fct_sales.sales), 1, 0) 
@@ -111,8 +111,8 @@ sales_and_profit_trends_by_quarter as
     then null
     else 
     cast(round(((sum(fct_sales.profit) - lag(sum(fct_sales.profit), 1, 0) 
-    over (order by dim_date.year_value, dim_date.quarter_value)) / lag(sum(fct_sales.profit), 1, 1) 
-    over (order by dim_date.year_value, dim_date.quarter_value)) * 100 ,3) as varchar) || '%'
+    over (order by dim_date.year_value, dim_date.quarter_value)) / abs(lag(sum(fct_sales.profit), 1, 1) 
+    over (order by dim_date.year_value, dim_date.quarter_value))) * 100 ,3) as varchar) || '%'
     end as profit_growth_rate,
 
     cast (round((sum(fct_sales.profit) / sum(fct_sales.sales)) * 100 ,3) as varchar) || '%' as profit_margin
@@ -159,8 +159,8 @@ sales_and_profit_trends_by_month as
     then null
     else 
     cast(round(((sum(fct_sales.sales) - lag(sum(fct_sales.sales), 1, 0) 
-    over (order by dim_date.year_value, dim_date.quarter_value, dim_date.month_value)) / lag(sum(fct_sales.sales), 1, 1) 
-    over (order by dim_date.year_value, dim_date.quarter_value, dim_date.month_value)) * 100 ,3) as varchar) || '%'
+    over (order by dim_date.year_value, dim_date.quarter_value, dim_date.month_value)) / abs(lag(sum(fct_sales.sales), 1, 1) 
+    over (order by dim_date.year_value, dim_date.quarter_value, dim_date.month_value))) * 100 ,3) as varchar) || '%'
     end as sales_growth_rate,
 
     case when lag(sum(fct_sales.sales), 1, 0) 
@@ -168,8 +168,8 @@ sales_and_profit_trends_by_month as
     then null
     else 
     cast(round(((sum(fct_sales.profit) - lag(sum(fct_sales.profit), 1, 0) 
-    over (order by dim_date.year_value, dim_date.quarter_value, dim_date.month_value)) / lag(sum(fct_sales.profit), 1, 1) 
-    over (order by dim_date.year_value, dim_date.quarter_value, dim_date.month_value)) * 100 ,3) as varchar) || '%'
+    over (order by dim_date.year_value, dim_date.quarter_value, dim_date.month_value)) / abs(lag(sum(fct_sales.profit), 1, 1) 
+    over (order by dim_date.year_value, dim_date.quarter_value, dim_date.month_value))) * 100 ,3) as varchar) || '%'
     end as profit_growth_rate,
 
     cast (round((sum(fct_sales.profit) / sum(fct_sales.sales)) * 100 ,3) as varchar) || '%' as profit_margin

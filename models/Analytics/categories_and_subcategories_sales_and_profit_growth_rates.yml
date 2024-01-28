@@ -24,13 +24,13 @@ models:
             description: "Total sales for the corresponding product category and subcategory."
 
           - name: sales_growth_rate
-            description: "The growth rate of sales for the corresponding product category and subcategory."
+            description: "The monthly growth rate of sales for the corresponding product category and subcategory."
 
           - name: total_profit
             description: "Total profits for the corresponding product category and subcategory."
 
           - name: profit_growth_rate
-            description: "The growth rate of profits for the corresponding product category and subcategory."
+            description: "The monthly growth rate of profits for the corresponding product category and subcategory."
 
         
 
