@@ -1,0 +1,53 @@
+version: 2
+
+models:
+  - name: customer_metrics
+    description: '{{ doc("customer_metrics_query_description") }}'
+    
+    columns:
+          - name: customer_id
+            description: "Customer's ID."
+
+          - name: customer_name
+            description: "Name of the Customer."
+
+          - name: segment
+            description: "The segment where the Customer belongs."
+
+          - name: customer_status
+            description: "The status of the Customer."
+
+          - name: total_orders
+            description: "The count of unique orders placed by each Customer."
+
+          - name: customer_lifetime_sales
+            description: "The lifetime sales of each Customer."
+
+          - name: average_order_value
+            description: "The average order value pertaining to each Customer."
+
+          - name: customer_life_span_in_days
+            description: "The life span of each Customer calculated in days."
+
+          - name: latest_order_date
+            description: "The Customer's latest order date."
+
+          - name: recency_in_days
+            description: "The number of days since the Customer's most recent order."
+
+          - name: average_time_gap_in_days
+            description: "The average time interval between a Customer's orders, measured in days."
+
+          - name: preferred_category
+            description: "The Customer's preferred product category."
+
+          - name: preferred_subcategory
+            description: "The Customer's preferred product subcategory."
+
+          - name: average_basket_size
+            description: "The Customer's average basket size."
+
+
+         
+  
+          

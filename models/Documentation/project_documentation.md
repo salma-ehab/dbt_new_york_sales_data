@@ -90,3 +90,14 @@ such as the number of distinct orders, total sum, average, 25th percentile, medi
 standard deviation for both sales and profit, along with the profit margin.
 
 {% enddocs %}
+
+{% docs customer_metrics_query_description %}
+
+This query is designed to collect various customer metrics, including 
+customer_status (active or inactive, determined by no sales within the last 90 days), 
+distinct order count, lifetime sales, average order value, customer lifespan in days, 
+latest order date, recency in days, average time gap between orders, 
+preferred category and subcategory products (determined by the most frequently purchased items, 
+with ties broken by selecting the one with the highest selling price), and finally, average basket size.
+
+{% enddocs %}
