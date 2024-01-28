@@ -289,7 +289,7 @@ Multiple queries were run to conduct analyses on the data.
   with ties broken by selecting the one with the highest selling price), and finally, average basket size.
 
 ### Product Categories and Subcategories Sales and Profit Growth Rates Query:
-- This query aims to compute the growth rates of sales and profits for 
+- This query aims to compute the monthly growth rates of sales and profits for 
   every product category and subcategory. In instances where certain subcategories 
   have no sales in a given month, the growth rates for both sales and profits in the 
   subsequent month are null, as there is no basis for comparison.
