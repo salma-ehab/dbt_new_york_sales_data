@@ -26,26 +26,6 @@ fct_sales as
     select * from {{ ref('fct_sales') }}
 ),
 
-distinct_order AS
-(
-    select distinct
-
-    dim_customer.customer_id,
-    dim_order.order_id,
-    dim_date.date_value
-
-    from fct_sales
-
-    inner join dim_customer
-    on fct_sales.customer_id = dim_customer.customer_id
-
-    inner join dim_order
-    on fct_sales.order_id = dim_order.order_id
-
-    inner join dim_date
-    on dim_order.order_date = dim_date.date_key
-),
-
 preferred_category as 
 (
     select

@@ -101,3 +101,12 @@ preferred category and subcategory products (determined by the most frequently p
 with ties broken by selecting the one with the highest selling price), and finally, average basket size.
 
 {% enddocs %}
+
+{% docs categories_and_subcategories_sales_and_profit_growth_rates_query_description %}
+
+This query aims to compute the growth rates of sales and profits for 
+every product category and subcategory. In instances where certain subcategories 
+have no sales in a given month, the growth rates for both sales and profits in the 
+subsequent month are null, as there is no basis for comparison.
+
+{% enddocs %}
