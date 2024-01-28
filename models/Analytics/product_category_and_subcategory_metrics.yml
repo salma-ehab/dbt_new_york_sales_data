@@ -1,0 +1,59 @@
+version: 2
+
+models:
+  - name: product_category_and_subcategory_metrics
+    description: '{{ doc("product_category_and_subcategory_metrics_query_description") }}'
+    
+    columns:
+          - name: category
+            description: "Category of the product ordered."
+
+          - name: subcategory
+            description: "Sub-Category of the product ordered."
+
+          - name: total_orders
+            description: "Number of distinct orders for the corresponding product category and subcategory."
+
+          - name: total_sales
+            description: "Total sales for the corresponding product category and subcategory."
+
+          - name: total_profit
+            description: "Total profits for the corresponding product category and subcategory."
+
+          - name: avg_sales
+            description: "Mean sales corresponding to the product category and subcategory."
+
+          - name: avg_profit
+            description: "Mean profits corresponding to the product category and subcategory."
+
+          - name: percentile_25_sales
+            description: "Sales at the 25th percentile for the corresponding product category and subcategory."
+
+          - name: percentile_25_profit
+            description: "Profits at the 25th percentile for the corresponding product category and subcategory."
+
+          - name: median_sales
+            description: "Sales at the 50th percentile for the corresponding product category and subcategory."
+
+          - name: median_profit
+            description: "Profits at the 50th percentile for the corresponding product category and subcategory."
+
+          - name: percentile_75_sales
+            description: "Sales at the 75th percentile for the corresponding product category and subcategory."
+
+          - name: percentile_75_profit
+            description: "Profits at the 75th percentile for the corresponding product category and subcategory."
+
+          - name: sales_standard_deviation
+            description: "The standard deviation of sales for the corresponding product category and subcategory."
+
+          - name: profit_standard_deviation
+            description: "The standard deviation of profits for the corresponding product category and subcategory."
+
+          - name: profit_margin
+            description: "The profit margin for the corresponding product category and subcategory."
+
+
+         
+  
+          

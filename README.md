@@ -17,7 +17,7 @@ establishing a star schema, and executing queries.
   - [Product Dimension](#product-dimension)
 - [Analytics](#analytics)
   - [Monthly Customer Sales Query](#monthly-customer-sales-query)
-  - [Product Category and Subcategory Total Sales Query](#product-category-and-subcategory-total-sales-query)
+  - [Product Category and Subcategory Metrics Query](#product-category-and-subcategory-metrics-query)
   - [Top Selling Products Query](#top-selling-products-query)
   - [Sales and Profit Trends Over Time Query](#sales-and-profit-trends-over-time-query)
 - [Project File Structure](#project-file-structure)
@@ -254,8 +254,10 @@ Multiple queries were run to conduct analyses on the data.
 ### Monthly Customer Sales Query:
 - This query aims to retrieve the monthly sales data for each customer.
 
-### Product Category and Subcategory Total Sales Query:
-- This query aims to retrieve the total sales for each product category and subcategory.
+### Product Category and Subcategory Metrics Query:
+- This query aims to extract metrics for product categories and subcategories, encompassing measures 
+  such as the number of distinct orders, total sum, average, 25th percentile, median, 75th percentile, 
+  standard deviation for both sales and profit, along with the profit margin.
 
 ### Top Selling Products Query:
 - This query aims to retrieve top 10 selling products.

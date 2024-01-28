@@ -82,3 +82,11 @@ The computation was executed on a yearly, quarterly and monthly basis, with a de
 to avoid daily breakdowns for enhanced result clarity.
 
 {% enddocs %}
+
+{% docs product_category_and_subcategory_metrics_query_description %}
+
+This query aims to extract metrics for product categories and subcategories, encompassing measures 
+such as the number of distinct orders, total sum, average, 25th percentile, median, 75th percentile, 
+standard deviation for both sales and profit, along with the profit margin.
+
+{% enddocs %}
