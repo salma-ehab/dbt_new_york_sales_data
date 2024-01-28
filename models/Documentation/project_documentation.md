@@ -110,3 +110,11 @@ have no sales in a given month, the growth rates for both sales and profits in t
 subsequent month are null, as there is no basis for comparison.
 
 {% enddocs %}
+
+{% docs location_metrics_query_description %}
+
+This query aims to extract metrics for every location, encompassing measures 
+such as the number of distinct orders, total sum, average, 25th percentile, median, 75th percentile, 
+standard deviation for both sales and profit, along with the profit margin.
+
+{% enddocs %}

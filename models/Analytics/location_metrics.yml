@@ -1,0 +1,65 @@
+version: 2
+
+models:
+  - name: location_metrics
+    description: '{{ doc("location_metrics_query_description") }}'
+    
+    columns:
+          - name: country
+            description: "Country of residence of the Customers."
+
+          - name: region
+            description: "Region where the Customers belong."
+
+          - name: state
+            description: "State of residence of the Customers."
+
+          - name: city
+            description: "City of residence of the Customers."
+
+          - name: total_orders
+            description: "Number of distinct orders for the corresponding location."
+
+          - name: total_sales
+            description: "Total sales for the corresponding location."
+
+          - name: total_profit
+            description: "Total profits for the corresponding location."
+
+          - name: avg_sales
+            description: "Mean sales corresponding to the location."
+
+          - name: avg_profit
+            description: "Mean profits corresponding to the location."
+
+          - name: percentile_25_sales
+            description: "Sales at the 25th percentile for the corresponding location."
+
+          - name: percentile_25_profit
+            description: "Profits at the 25th percentile for the corresponding location."
+
+          - name: median_sales
+            description: "Sales at the 50th percentile for the corresponding location."
+
+          - name: median_profit
+            description: "Profits at the 50th percentile for the corresponding location."
+
+          - name: percentile_75_sales
+            description: "Sales at the 75th percentile for the corresponding location."
+
+          - name: percentile_75_profit
+            description: "Profits at the 75th percentile for the corresponding location."
+
+          - name: sales_standard_deviation
+            description: "The standard deviation of sales for the corresponding location."
+
+          - name: profit_standard_deviation
+            description: "The standard deviation of profits for the corresponding location."
+
+          - name: profit_margin
+            description: "The profit margin for the corresponding location."
+
+
+         
+  
+          

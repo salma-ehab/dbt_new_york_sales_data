@@ -17,13 +17,14 @@ establishing a star schema, and executing queries.
   - [Product Dimension](#product-dimension)
 - [Analytics](#analytics)
   - [Monthly Customer Sales Query](#monthly-customer-sales-query)
-  - [Product Category and Subcategory Metrics Query](#product-category-and-subcategory-metrics-query)
-  - [Top Selling Products Query](#top-selling-products-query)
+  - [Customer Metrics Query](#customer-metrics-query)
   - [Sales and Profit Trends Over Time Query](#sales-and-profit-trends-over-time-query)
+  - [Product Category and Subcategory Metrics Query](#product-category-and-subcategory-metrics-query)
+  - [Product Categories and Subcategories Sales and Profit Growth Rates Query](#product-categories-and-subcategories-sales-and-profit-growth-rates-query)
+  - [Top Selling Products Query](#top-selling-products-query)
   - [Products with Highest Profit Margins Query](#products-with-highest-profit-margins-query)
   - [Products with Lowest Profit Margins Query](#products-with-lowest-profit-margins-query)
-  - [Customer Metrics Query](#customer-metrics-query)
-  - [Product Categories and Subcategories Sales and Profit Growth Rates Query](#product-categories-and-subcategories-sales-and-profit-growth-rates-query)
+  - [Location Metrics Query](#location-metrics-query)
 - [Project File Structure](#project-file-structure)
 - [Data Source and Dictionary](#data-source-and-dictionary)
 
@@ -258,13 +259,13 @@ Multiple queries were run to conduct analyses on the data.
 ### Monthly Customer Sales Query:
 - This query aims to retrieve the monthly sales data for each customer.
 
-### Product Category and Subcategory Metrics Query:
-- This query aims to extract metrics for product categories and subcategories, encompassing measures 
-  such as the number of distinct orders, total sum, average, 25th percentile, median, 75th percentile, 
-  standard deviation for both sales and profit, along with the profit margin.
-
-### Top Selling Products Query:
-- This query aims to retrieve top 10 selling products.
+### Customer Metrics Query:
+- This query is designed to collect various customer metrics, including 
+  customer_status (active or inactive, determined by no sales within the last 90 days), 
+  distinct order count, lifetime sales, average order value, customer lifespan in days, 
+  latest order date, recency in days, average time gap between orders, 
+  preferred category and subcategory products (determined by the most frequently purchased items, 
+  with ties broken by selecting the one with the highest selling price), and finally, average basket size.
 
 ### Sales and profit Trends Over Time Query:
 - This query aims to retrieve trends in sales and profit over time, encompassing metrics such as 
@@ -274,25 +275,30 @@ Multiple queries were run to conduct analyses on the data.
 - The computation was executed on a yearly, quarterly and monthly basis, with a deliberate decision 
   to avoid daily breakdowns for enhanced result clarity.
 
-### Products with Highest Profit Margins Query:
-- This query aims to obtain the top 10 products with the highest profit margins.
-
-### Products with Lowest Profit Margins Query:
-- This query aims to obtain the top 10 products with the lowest profit margins.
-
-### Customer Metrics Query:
-- This query is designed to collect various customer metrics, including 
-  customer_status (active or inactive, determined by no sales within the last 90 days), 
-  distinct order count, lifetime sales, average order value, customer lifespan in days, 
-  latest order date, recency in days, average time gap between orders, 
-  preferred category and subcategory products (determined by the most frequently purchased items, 
-  with ties broken by selecting the one with the highest selling price), and finally, average basket size.
+### Product Category and Subcategory Metrics Query:
+- This query aims to extract metrics for product categories and subcategories, encompassing measures 
+  such as the number of distinct orders, total sum, average, 25th percentile, median, 75th percentile, 
+  standard deviation for both sales and profit, along with the profit margin.
 
 ### Product Categories and Subcategories Sales and Profit Growth Rates Query:
 - This query aims to compute the monthly growth rates of sales and profits for 
   every product category and subcategory. In instances where certain subcategories 
   have no sales in a given month, the growth rates for both sales and profits in the 
   subsequent month are null, as there is no basis for comparison.
+
+### Top Selling Products Query:
+- This query aims to retrieve top 10 selling products.
+
+### Products with Highest Profit Margins Query:
+- This query aims to obtain the top 10 products with the highest profit margins.
+
+### Products with Lowest Profit Margins Query:
+- This query aims to obtain the top 10 products with the lowest profit margins.
+
+### Location Metrics Query:
+- This query aims to extract metrics for every location, encompassing measures 
+  such as the number of distinct orders, total sum, average, 25th percentile, median, 75th percentile, 
+  standard deviation for both sales and profit, along with the profit margin.
 
 ## Project File Structure:
 
