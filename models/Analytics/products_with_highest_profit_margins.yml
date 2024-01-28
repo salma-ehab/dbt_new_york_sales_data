@@ -2,7 +2,7 @@ version: 2
 
 models:
   - name: products_with_highest_profit_margins
-    description: "This query aims to obtain the top 10 products with the highest profit margins."
+    description: '{{ doc("products_with_highest_profit_margins_query_description") }}'
     
     columns:
           - name: product_id
@@ -10,6 +10,12 @@ models:
 
           - name: product_name
             description: "Name of the Product."
+
+          - name: total_orders
+            description: "Number of distinct orders pertaining to each product."
+
+          - name: total_products_purchased
+            description: "Number of products purchased."
 
           - name: profit_margin
             description: "Profit margin pertaining to each product."

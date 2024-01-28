@@ -280,9 +280,10 @@ Multiple queries were run to conduct analyses on the data.
   to avoid daily breakdowns for enhanced result clarity.
 
 ### Product Category and Subcategory Metrics Query:
-- This query aims to extract metrics for product categories and subcategories, encompassing measures 
-  such as the number of distinct orders, total sum, average, 25th percentile, median, 75th percentile, 
-  standard deviation for both sales and profit, along with the profit margin.
+- This query aims to obtain metrics for categories and subcategories specific to each location. 
+  It seeks to gather, for each specific location, category, and subcategory, the total number of distinct orders, 
+  the total number of purchased products, the total sum, and average values for both sales and profits, 
+  along with the associated profit margin.
 
 ### Product Categories and Subcategories Sales and Profit Growth Rates Query:
 - This query aims to compute the monthly growth rates of sales and profits for 
@@ -291,13 +292,16 @@ Multiple queries were run to conduct analyses on the data.
   subsequent month are null, as there is no basis for comparison.
 
 ### Top Selling Products Query:
-- This query aims to retrieve top 10 selling products.
+- A query to retrieve the top 10 selling products accompanied by their 
+  respective counts of distinct orders and the number of purchased products.
 
 ### Products with Highest Profit Margins Query:
-- This query aims to obtain the top 10 products with the highest profit margins.
+- This query seeks to identify the top 10 products exhibiting the greatest profit margins, 
+  accompanied by their respective counts of distinct orders and the number of purchased products.
 
 ### Products with Lowest Profit Margins Query:
-- This query aims to obtain the top 10 products with the lowest profit margins.
+- This query seeks to identify the top 10 products exhibiting the smallest profit margins, 
+  accompanied by their respective counts of distinct orders and the number of purchased products.
 
 ### Location Metrics Query:
 - This query aims to extract metrics for every location, encompassing measures 
@@ -311,15 +315,18 @@ Multiple queries were run to conduct analyses on the data.
   as there is no basis for comparison.
 
 ### Locations with Highest Profit Margins Query:
-- This query aims to obtain the top 10 locations with the highest profit margins.
+- This query seeks to identify the top 10 locations exhibiting the greatest profit margins, 
+  accompanied by their respective counts of distinct orders.
 
 ### Locations with Lowest Profit Margins Query:
-- This query aims to obtain the top 10 locations with the lowest profit margins.
+- This query seeks to identify the top 10 locations exhibiting the smallest profit margins, 
+  accompanied by their respective counts of distinct orders.
 
 ### Category and Subcategory Metrics by Location Query:
 - This query aims to obtain metrics for categories and subcategories specific to each location. 
   It seeks to gather, for each specific location, category, and subcategory, the total number of distinct orders, 
-  the total sum, and average values for both sales and profits, along with the associated profit margin.
+  the total number of purchased products, the total sum, and average values for both sales and profits, 
+  along with the associated profit margin.
 
 ## Project File Structure:
 

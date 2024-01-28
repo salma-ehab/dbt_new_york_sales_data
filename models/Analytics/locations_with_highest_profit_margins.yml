@@ -2,7 +2,7 @@ version: 2
 
 models:
   - name: locations_with_highest_profit_margins
-    description: "This query aims to obtain the top 10 locations with the highest profit margins."
+    description:  '{{ doc("locations_with_highest_profit_margins_query_description") }}'
     
     columns:
           - name: country
@@ -17,6 +17,8 @@ models:
           - name: city
             description: "City of residence of the Customers."
 
+          - name: total_orders
+            description: "Number of distinct orders pertaining to each location."
 
           - name: profit_margin
             description: "Profit margin pertaining to each location."

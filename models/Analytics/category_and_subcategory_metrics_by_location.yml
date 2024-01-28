@@ -27,6 +27,9 @@ models:
           - name: total_orders
             description: "Number of distinct orders pertaining to the specified location, product category, and subcategory."
 
+          - name: total_products_purchased
+            description: "Number of products purchased pertaining to the specified location, product category, and subcategory."
+
           - name: total_sales
             description: "Total sales pertaining to the specified location, product category, and subcategory."
 

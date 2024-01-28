@@ -86,8 +86,9 @@ to avoid daily breakdowns for enhanced result clarity.
 {% docs product_category_and_subcategory_metrics_query_description %}
 
 This query aims to extract metrics for product categories and subcategories, encompassing measures 
-such as the number of distinct orders, total sum, average, 25th percentile, median, 75th percentile, 
-standard deviation for both sales and profit, along with the profit margin.
+such as the number of distinct orders, the total number of purchased products, total sum, 
+average, 25th percentile, median, 75th percentile, standard deviation for both sales and profit, 
+along with the profit margin.
 
 {% enddocs %}
 
@@ -132,6 +133,42 @@ as there is no basis for comparison.
 
 This query aims to obtain metrics for categories and subcategories specific to each location. 
 It seeks to gather, for each specific location, category, and subcategory, the total number of distinct orders, 
-the total sum, and average values for both sales and profits, along with the associated profit margin.
+the total number of purchased products, the total sum, and average values for both sales and profits, 
+along with the associated profit margin.
+
+{% enddocs %}
+
+{% docs products_with_highest_profit_margins_query_description %}
+
+This query seeks to identify the top 10 products exhibiting the greatest profit margins, 
+accompanied by their respective counts of distinct orders and the number of purchased products.
+
+{% enddocs %}
+
+{% docs products_with_lowest_profit_margins_query_description %}
+
+This query seeks to identify the top 10 products exhibiting the smallest profit margins, 
+accompanied by their respective counts of distinct orders and the number of purchased products.
+
+{% enddocs %}
+
+{% docs locations_with_highest_profit_margins_query_description %}
+
+This query seeks to identify the top 10 locations exhibiting the greatest profit margins, 
+accompanied by their respective counts of distinct orders.
+
+{% enddocs %}
+
+{% docs locations_with_lowest_profit_margins_query_description %}
+
+This query seeks to identify the top 10 locations exhibiting the smallest profit margins, 
+accompanied by their respective counts of distinct orders.
+
+{% enddocs %}
+
+{% docs top_selling_products_query_description %}
+
+A query to retrieve the top 10 selling products accompanied by their 
+respective counts of distinct orders and the number of purchased products.
 
 {% enddocs %}

@@ -22,6 +22,7 @@ product_category_and_subcategory_metrics as
     dim_product.category,
     dim_product.subcategory,
     count(distinct dim_order.order_id) as total_orders,
+    sum(fct_sales.quantity) as total_products_purchased,
 
     round(sum(fct_sales.sales),3) as total_sales,
     round(sum(fct_sales.profit),3) as total_profit,

@@ -2,7 +2,7 @@ version: 2
 
 models:
   - name: top_selling_products
-    description: "A query to retrieve top 10 selling products."
+    description:  '{{ doc("top_selling_products_query_description") }}'
     
     columns:
           - name: product_id
@@ -10,6 +10,12 @@ models:
 
           - name: product_name
             description: "Name of the Product."
+
+          - name: total_orders
+            description: "Number of distinct orders pertaining to each product."
+
+          - name: total_products_purchased
+            description: "Number of products purchased."
 
           - name: total_product_sales
             description: "Total sales pertaining to each product."

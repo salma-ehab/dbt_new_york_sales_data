@@ -14,6 +14,9 @@ models:
           - name: total_orders
             description: "Number of distinct orders for the corresponding product category and subcategory."
 
+          - name: total_products_purchased
+            description: "Number of products purchased for the corresponding product category and subcategory."
+
           - name: total_sales
             description: "Total sales for the corresponding product category and subcategory."
 
