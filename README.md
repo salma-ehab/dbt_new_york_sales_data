@@ -19,6 +19,7 @@ establishing a star schema, and executing queries.
   - [Monthly Customer Sales Query](#monthly-customer-sales-query)
   - [Product Category and Subcategory Total Sales Query](#product-category-and-subcategory-total-sales-query)
   - [Top Selling Products Query](#top-selling-products-query)
+  - [Sales and Profit Trends Over Time Query](#sales-and-profit-trends-over-time-query)
 - [Project File Structure](#project-file-structure)
 - [Data Source and Dictionary](#data-source-and-dictionary)
 
@@ -258,6 +259,14 @@ Multiple queries were run to conduct analyses on the data.
 
 ### Top Selling Products Query:
 - This query aims to retrieve top 10 selling products.
+
+### Sales and profit Trends Over Time Query:
+- This query aims to retrieve trends in sales and profit over time, encompassing metrics such as 
+  the count of unique orders, total sum, average, 25th percentile, median, 75th percentile, 
+  standard deviation, as well as the growth rates for both sales and profit, along with the profit margin.
+
+- The computation was executed on a yearly, quarterly and monthly basis, with a deliberate decision 
+  to avoid daily breakdowns for enhanced result clarity.
 
 ## Project File Structure:
 

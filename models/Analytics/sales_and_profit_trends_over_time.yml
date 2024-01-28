@@ -1,0 +1,68 @@
+version: 2
+
+models:
+  - name: sales_and_profit_trends_over_time
+    description: '{{ doc("sales_and_profit_trends_over_time_query_description") }}'
+    
+    columns:
+          - name: year_value
+            description: "The value representing the year."
+
+          - name: quarter_value
+            description: "The value representing the quarter."
+
+          - name: month_value
+            description: "The value representing the month."
+
+          - name: total_orders
+            description: "Number of distinct orders corresponding to the yearly, quarterly, and monthly periods."
+
+          - name: total_sales
+            description: "Total sales corresponding to the yearly, quarterly, and monthly periods."
+
+          - name: total_profit
+            description: "Total profits corresponding to the yearly, quarterly, and monthly periods."
+
+          - name: avg_sales
+            description: "Mean sales corresponding to the yearly, quarterly, and monthly periods."
+
+          - name: avg_profit
+            description: "Mean profits corresponding to the yearly, quarterly, and monthly periods."
+
+          - name: percentile_25_sales
+            description: "Sales at the 25th percentile for the corresponding yearly, quarterly, and monthly timeframes."
+
+          - name: percentile_25_profit
+            description: "Profits at the 25th percentile for the corresponding yearly, quarterly, and monthly timeframes."
+
+          - name: median_sales
+            description: "Sales at the 50th percentile for the corresponding yearly, quarterly, and monthly timeframes."
+
+          - name: median_profit
+            description: "Profits at the 50th percentile for the corresponding yearly, quarterly, and monthly timeframes."
+
+          - name: percentile_75_sales
+            description: "Sales at the 75th percentile for the corresponding yearly, quarterly, and monthly timeframes."
+
+          - name: percentile_75_profit
+            description: "Profits at the 75th percentile for the corresponding yearly, quarterly, and monthly timeframes."
+
+          - name: sales_standard_deviation
+            description: "The standard deviation of sales for the corresponding yearly, quarterly, and monthly durations."
+
+          - name: profit_standard_deviation
+            description: "The standard deviation of profits for the corresponding yearly, quarterly, and monthly durations."
+
+          - name: sales_growth_rate
+            description: "The growth rate of sales for the corresponding yearly, quarterly, and monthly intervals."
+
+          - name: profit_growth_rate
+            description: "The growth rate of profits for the corresponding yearly, quarterly, and monthly intervals."
+
+          - name: profit_margin
+            description: "The profit margin for the corresponding yearly, quarterly, and monthly intervals."
+
+
+         
+  
+          

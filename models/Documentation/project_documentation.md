@@ -71,3 +71,14 @@ with the combined foreign keys of customer ID, region iterative key, order ID, a
 serving as the primary key.
 
 {% enddocs %}
+
+{% docs sales_and_profit_trends_over_time_query_description %}
+
+This query aims to retrieve trends in sales and profit over time, encompassing metrics such as 
+the count of unique orders, total sum, average, 25th percentile, median, 75th percentile, 
+standard deviation, as well as the growth rates for both sales and profit, along with the profit margin.
+
+The computation was executed on a yearly, quarterly and monthly basis, with a deliberate decision 
+to avoid daily breakdowns for enhanced result clarity.
+
+{% enddocs %}
