@@ -172,3 +172,12 @@ A query to retrieve the top 10 selling products accompanied by their
 respective counts of distinct orders and the number of purchased products.
 
 {% enddocs %}
+
+{% docs impact_of_discounts_on_sales_and_profit_query_description %}
+
+This query aims to analyze how discounts affect sales and profits on a per-product basis. 
+It seeks to retrieve unique counts of orders, total products purchased, overall sums, 
+and averages for both sales and profits for each combination of discount and product. 
+Additionally, it includes a calculation for profit margin.
+
+{% enddocs %}

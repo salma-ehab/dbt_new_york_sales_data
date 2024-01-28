@@ -1,0 +1,47 @@
+version: 2
+
+models:
+  - name: impact_of_discounts_on_sales_and_profit
+    description: '{{ doc("impact_of_discounts_on_sales_and_profit_query_description") }}'
+    
+    columns:
+          - name: product_id
+            description: "ID of the Product."
+
+          - name: product_name
+            description: "Name of the Product."
+
+          - name: discount
+            description: "Discount provided on the product."
+
+          - name: total_orders
+            description: "Number of distinct orders pertaining to each product and discount combination."
+
+          - name: total_products_purchased
+            description: "Number of products purchased pertaining to each product and discount combination."
+
+          - name: total_sales
+            description: "Total sales for the corresponding product and discount combination."
+
+          - name: total_profit
+            description: "Total profits for the corresponding product and discount combination."
+
+          - name: avg_sales
+            description: "Mean sales corresponding to the specified product and discount combination."
+
+          - name: avg_profit
+            description: "Mean profits corresponding to the specified product and discount combination."
+
+          - name: profit_margin
+            description: "Profit margin pertaining to each product and discount combination."
+          
+       
+        
+
+        
+
+       
+
+         
+  
+          

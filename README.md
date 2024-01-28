@@ -24,6 +24,7 @@ establishing a star schema, and executing queries.
   - [Top Selling Products Query](#top-selling-products-query)
   - [Products with Highest Profit Margins Query](#products-with-highest-profit-margins-query)
   - [Products with Lowest Profit Margins Query](#products-with-lowest-profit-margins-query)
+  - [Impact of Discounts on Sales and Profit Query](#impact-of-discounts-on-sales-and-profit-query)
   - [Location Metrics Query](#location-metrics-query)
   - [Location Sales and Profit Growth Rates Query](#location-sales-and-profit-growth-rates-query)
   - [Locations with Highest Profit Margins Query](#locations-with-highest-profit-margins-query)
@@ -302,6 +303,12 @@ Multiple queries were run to conduct analyses on the data.
 ### Products with Lowest Profit Margins Query:
 - This query seeks to identify the top 10 products exhibiting the smallest profit margins, 
   accompanied by their respective counts of distinct orders and the number of purchased products.
+
+### Impact of Discounts on Sales and Profit Query:
+- This query aims to analyze how discounts affect sales and profits on a per-product basis. 
+  It seeks to retrieve unique counts of orders, total products purchased, overall sums, 
+  and averages for both sales and profits for each combination of discount and product. 
+  Additionally, it includes a calculation for profit margin.
 
 ### Location Metrics Query:
 - This query aims to extract metrics for every location, encompassing measures 
