@@ -26,6 +26,8 @@ establishing a star schema, and executing queries.
   - [Products with Lowest Profit Margins Query](#products-with-lowest-profit-margins-query)
   - [Location Metrics Query](#location-metrics-query)
   - [Location Sales and Profit Growth Rates Query](#location-sales-and-profit-growth-rates-query)
+  - [Locations with Highest Profit Margins Query](#locations-with-highest-profit-margins-query)
+  - [Locations with Lowest Profit Margins Query](#locations-with-lowest-profit-margins-query)
 - [Project File Structure](#project-file-structure)
 - [Data Source and Dictionary](#data-source-and-dictionary)
 
@@ -306,6 +308,12 @@ Multiple queries were run to conduct analyses on the data.
   every location. In instances where certain locations have no sales in a given month, 
   the growth rates for both sales and profits in the subsequent month are null, 
   as there is no basis for comparison.
+
+### Locations with Highest Profit Margins Query:
+- This query aims to obtain the top 10 locations with the highest profit margins.
+
+### Locations with Lowest Profit Margins Query:
+- This query aims to obtain the top 10 locations with the lowest profit margins.
 
 ## Project File Structure:
 

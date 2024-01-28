@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: locations_with_lowest_profit_margins
+    description: "This query aims to obtain the top 10 locations with the lowest profit margins."
+    
+    columns:
+          - name: country
+            description: "Country of residence of the Customers."
+
+          - name: region
+            description: "Region where the Customers belong."
+
+          - name: state
+            description: "State of residence of the Customers."
+
+          - name: city
+            description: "City of residence of the Customers."
+
+
+          - name: profit_margin
+            description: "Profit margin pertaining to each location."
+
+
+         
+  
+          
