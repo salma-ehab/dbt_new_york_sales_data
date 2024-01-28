@@ -127,3 +127,11 @@ the growth rates for both sales and profits in the subsequent month are null,
 as there is no basis for comparison.
 
 {% enddocs %}
+
+{% docs category_and_subcategory_metrics_by_location_query_description %}
+
+This query aims to obtain metrics for categories and subcategories specific to each location. 
+It seeks to gather, for each specific location, category, and subcategory, the total number of distinct orders, 
+the total sum, and average values for both sales and profits, along with the associated profit margin.
+
+{% enddocs %}

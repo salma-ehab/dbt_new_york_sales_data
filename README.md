@@ -28,6 +28,7 @@ establishing a star schema, and executing queries.
   - [Location Sales and Profit Growth Rates Query](#location-sales-and-profit-growth-rates-query)
   - [Locations with Highest Profit Margins Query](#locations-with-highest-profit-margins-query)
   - [Locations with Lowest Profit Margins Query](#locations-with-lowest-profit-margins-query)
+  - [Category and Subcategory Metrics by Location Query](#category-and-subcategory-metrics-by-location-query)
 - [Project File Structure](#project-file-structure)
 - [Data Source and Dictionary](#data-source-and-dictionary)
 
@@ -314,6 +315,11 @@ Multiple queries were run to conduct analyses on the data.
 
 ### Locations with Lowest Profit Margins Query:
 - This query aims to obtain the top 10 locations with the lowest profit margins.
+
+### Category and Subcategory Metrics by Location Query:
+- This query aims to obtain metrics for categories and subcategories specific to each location. 
+  It seeks to gather, for each specific location, category, and subcategory, the total number of distinct orders, 
+  the total sum, and average values for both sales and profits, along with the associated profit margin.
 
 ## Project File Structure:
 

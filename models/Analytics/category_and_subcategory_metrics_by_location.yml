@@ -1,0 +1,51 @@
+version: 2
+
+models:
+  - name: category_and_subcategory_metrics_by_location
+    description: '{{ doc("category_and_subcategory_metrics_by_location_query_description") }}'
+    
+    columns:
+
+          - name: country
+            description: "Country of residence of the Customers."
+
+          - name: region
+            description: "Region where the Customers belong."
+
+          - name: state
+            description: "State of residence of the Customers."
+
+          - name: city
+            description: "City of residence of the Customers."
+
+          - name: category
+            description: "Category of the product ordered."
+
+          - name: subcategory
+            description: "Sub-Category of the product ordered."
+
+          - name: total_orders
+            description: "Number of distinct orders pertaining to the specified location, product category, and subcategory."
+
+          - name: total_sales
+            description: "Total sales pertaining to the specified location, product category, and subcategory."
+
+          - name: total_profit
+            description: "Total profits pertaining to the specified location, product category, and subcategory."
+
+          - name: avg_sales
+            description: "Mean sales corresponding to the specified location, product category, and subcategory."
+
+          - name: avg_profit
+            description: "Mean profits corresponding to the specified location, product category, and subcategory."
+
+          - name: profit_margin
+            description: "The profit margin corresponding to the specified location, product category, and subcategory."
+
+        
+
+       
+
+         
+  
+          
