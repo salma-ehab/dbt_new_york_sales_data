@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: superstore_data_2
+    description: "A database specifically created for the purpose of overseeing and arranging information pertaining to the functions of a retail superstore."
+    database: superstore_raw_2
+    schema: superstore_data_2
+    tables:
+      - name: superstore_table_2
+      
