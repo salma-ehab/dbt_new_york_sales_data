@@ -1,0 +1,43 @@
+version: 2
+
+models:
+  - name: events_data_cleaned
+    description: '{{ doc("events_data_cleaned_description") }}'
+    
+    columns:
+          - name: event_id
+            description: "ID for each event."
+
+          - name: match_id 
+            description: "Match ID where the event occurred."
+
+          - name: team
+            description: "Team responsible for the event."
+
+          - name: event_team 
+            description: "Field denoting whether the team responsible for the event was playing away or at home."
+
+          - name: event_time
+            description: "Time of occurrence for the event."
+
+          - name: event_type
+            description: "Event type which may include a yellow card, red card, goal, penalty, or substitution."
+
+          - name: action_player_1
+            description: "The player that could either be the one who received a yellow card, red card, penalty, or scored a goal, or they may be the player set to substitute someone, depending on the nature of the event."
+
+          - name: action_player_2
+            description: '{{ doc("cleaned_event_data_action_player_2_description") }}'
+         
+          - name: penalty_outcome
+            description: "This field remains null for non-penalty events, and it denotes either a 'Penalty' or a 'Missed penalty' when the event type is classified as a 'penalty'."
+
+          - name: goal_status
+            description: "This field remains null for non-goal events, and it denotes either a 'Goal' or a 'Disallowed goal' when the event type is classified as a 'goal'."
+
+          - name: league_name
+            description: "The league to which teams and matches are affiliated."
+
+          - name: season
+            description: "The football season during which matches took place."
+        

@@ -1,0 +1,190 @@
+version: 2
+
+sources:
+  - name: european_football_data
+    description: "This dataset contains information related to many national championships in Europe as well as the continental league."
+    database: european_football_raw
+    schema: european_football_data
+    tables: 
+      - name: events_table
+        description: "This table records the timing of each event (e.g., goals, red cards) that occurred during the match."
+        columns:
+          - name: event_id 
+            description: "ID for each event."
+            tests:
+              - not_null
+
+          - name: match_id 
+            description: "Match ID where the event occurred."
+            tests:
+              - not_null
+
+          - name: team 
+            description: "Team responsible for the event."
+            tests:
+              - not_null
+
+          - name: event_team 
+            description: "Field denoting whether the team responsible for the event was playing away or at home."
+            tests:
+              - not_null
+              - accepted_values:
+                  values:
+                     - Home
+                     - Away
+
+          - name: event_time
+            description: "Time of occurrence for the event."
+            tests:
+              - not_null
+
+          - name: event_type
+            description: "Event type which may include a yellow card, red card, goal, penalty, or substitution."
+            tests:
+              - not_null
+              - accepted_values:
+                  values:
+                     - goal
+                     - yellow-card
+                     - substitution
+                     - red-card
+                     - penalty
+            
+          - name: action_player_1
+            description: "The player that could either be the one who received a yellow card, red card, penalty, or scored a goal, or they may be the player set to substitute someone, depending on the nature of the event."
+            tests:
+              - not_null
+
+          - name: action_player_2
+            description: '{{ doc("source_data_action_player_2_description") }}'
+
+          - name: league_name
+            description: "The league to which teams and matches are affiliated."
+            tests:
+              - not_null
+              - accepted_values:
+                  values:
+                     - Bundesliga
+                     - Champions League
+                     - Eredivisie
+                     - LaLiga
+                     - Liga Portugal
+                     - Ligue 1
+                     - Premier League
+                     - Serie A
+                     - Europa League
+
+          - name: season
+            description: "The football season during which matches took place."
+            tests:
+              - not_null
+              - accepted_values:
+                  values:
+                     - 2022-2023 Season
+
+      - name: matches_final_data_table
+        description: "This table offers a detailed breakdown of essential match information, such as the score, lineup, location, and date."
+        columns:
+          - name: match_id
+            description: "ID for each match."
+            tests:
+              - not_null
+          
+          - name: stage_name
+            description: "The competition's phase."
+            tests:
+              - not_null
+
+          - name: match_date
+            description: "Date of the match."
+            tests:
+              - not_null
+
+          - name: pens
+            description: "A field designed to specify whether a penalty was granted during the match or not."
+
+          - name: pens_home_score
+            description: "The number of penalties scored by the home team during the match."
+
+          - name: pens_away_score
+            description: "The number of penalties scored by the away team during the match."
+
+          - name: team_name_home
+            description: "The team playing at their home venue in the match."
+            tests:
+              - not_null
+
+          - name: team_name_away
+            description: "The away team competing in the match."
+            tests:
+              - not_null
+
+          - name: team_home_score
+            description: "The number of goals scored by the home team."
+            tests:
+              - not_null
+
+          - name: team_away_score
+            description: "The number of goals scored by the away team."
+            tests:
+              - not_null
+
+          - name: possession_home
+            description: "The percentage of ball possession maintained by the home team."
+
+          - name: possession_away
+            description: "The percentage of ball possession maintained by the away team."
+
+          - name: total_shots_home
+            description: "The number of shots taken by the home team."
+
+          - name: total_shots_away
+            description: "The number of shots taken by the away team."
+
+          - name: shots_on_target_home
+            description: "The number of shots on target taken by the home team."
+
+          - name: shots_on_target_away
+            description: "The number of shots on target taken by the away team."
+
+          - name: duels_won_home
+            description: "The number of duels won by the home team."
+
+          - name: duels_won_away
+            description: "The number of duels won by the away team."
+
+          - name: prediction_team_home_win
+            description: "The likelihood of the home team winning the match."
+            tests:
+              - not_null
+
+          - name: prediction_draw
+            description: "The probability of both teams ending the match in a draw."
+            tests:
+              - not_null
+
+          - name: prediction_team_away_win
+            description: "The likelihood of the away team winning the match."
+            tests:
+              - not_null
+
+          - name: prediction_quantity
+            description: "The match's prediction_quantity."
+            tests:
+              - not_null
+
+          - name: location
+            description: "The location where the match took place."
+            tests:
+              - not_null
+
+         
+           
+          
+              
+              
+                  
+                  
+                 
+
+      
